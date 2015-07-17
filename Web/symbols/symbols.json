@@ -1,0 +1,47 @@
+[
+  {
+      "tag": "arrow", 
+      "id": 1, 
+      "svgPath": "/symbols/images/arrow436.svg"
+  },
+  {
+      "tag": "blank", 
+      "id": 2, 
+      "svgPath": "/symbols/images/blank32.svg"
+  },
+  {
+      "tag": "chop", 
+      "id": 3, 
+      "svgPath": "/symbols/images/chop.svg"
+  },
+  {
+      "tag": "circle", 
+      "id": 4, 
+      "svgPath": "/symbols/images/circular132.svg"
+  },
+  {
+      "tag": "cube", 
+      "id": 5, 
+      "svgPath": "/symbols/images/cube8.svg"
+  },
+  {
+      "tag": "draw", 
+      "id": 6, 
+      "svgPath": "/symbols/images/draw24.svg"
+  },
+  {
+      "tag": "feather", 
+      "id": 7, 
+      "svgPath": "/symbols/images/feathers.svg"
+  },
+  {
+      "tag": "flake", 
+      "id": 8, 
+      "svgPath": "/symbols/images/flakes2.svg"
+  },
+  {
+      "tag": "heart", 
+      "id": 9, 
+      "svgPath": "/symbols/images/heart2.svg"
+  }
+]

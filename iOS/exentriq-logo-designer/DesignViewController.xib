@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DesignViewController">
+            <connections>
+                <outlet property="_contentView" destination="N51-tr-Xrd" id="dzv-xi-fup"/>
+                <outlet property="_libraryImageCollection" destination="qEF-nd-LQ7" id="skX-Cd-x0n"/>
+                <outlet property="_libraryImageEditorView" destination="LmH-oO-f0L" id="G9U-Tu-d1O"/>
+                <outlet property="_librarySelector" destination="bL8-EG-j6a" id="sRX-t7-tPo"/>
+                <outlet property="_libraryTextEditorView" destination="ohX-Vf-Qoz" id="wbb-dB-juA"/>
+                <outlet property="_libraryView" destination="CyK-9Y-drf" id="Cia-Mx-rC5"/>
+                <outlet property="_logoImage" destination="xga-fQ-hAx" id="iLz-xR-TN3"/>
+                <outlet property="_logoTagline" destination="R5H-ca-Qd7" id="2Aj-Le-tdE"/>
+                <outlet property="_logoTitle" destination="zjd-Q8-rHp" id="Ha3-Ev-jq2"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_1.png" translatesAutoresizingMaskIntoConstraints="NO" id="xga-fQ-hAx" customClass="LogoImageView">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="3Rh-KN-sho"/>
+                        <constraint firstAttribute="height" constant="150" id="SCD-sX-vzJ"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="3Rh-KN-sho"/>
+                            <exclude reference="SCD-sX-vzJ"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="3Rh-KN-sho"/>
+                            <include reference="SCD-sX-vzJ"/>
+                        </mask>
+                    </variation>
+                </imageView>
+                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zjd-Q8-rHp" customClass="LogoLabel">
+                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="E1k-oA-v4e"/>
+                    </constraints>
+                    <attributedString key="attributedText">
+                        <fragment content="TITLE">
+                            <attributes>
+                                <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="36" name="HelveticaNeue-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="E1k-oA-v4e"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="E1k-oA-v4e"/>
+                        </mask>
+                    </variation>
+                </label>
+                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R5H-ca-Qd7" customClass="LogoLabel">
+                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="6Ms-0v-cVP"/>
+                        <constraint firstAttribute="width" constant="150" id="jva-q7-Dup"/>
+                    </constraints>
+                    <attributedString key="attributedText">
+                        <fragment content="Tagline">
+                            <attributes>
+                                <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="23" name="HelveticaNeue-Light"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="6Ms-0v-cVP"/>
+                            <exclude reference="jva-q7-Dup"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="6Ms-0v-cVP"/>
+                            <include reference="jva-q7-Dup"/>
+                        </mask>
+                    </variation>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="zjd-Q8-rHp" firstAttribute="top" secondItem="xga-fQ-hAx" secondAttribute="bottom" constant="8" id="4Wi-ju-bsL"/>
+                <constraint firstAttribute="bottom" secondItem="xga-fQ-hAx" secondAttribute="bottom" constant="486" id="7uY-oS-9xd"/>
+                <constraint firstAttribute="centerX" secondItem="R5H-ca-Qd7" secondAttribute="centerX" id="HcR-Xp-ODe"/>
+                <constraint firstAttribute="centerX" secondItem="zjd-Q8-rHp" secondAttribute="centerX" id="WUD-Do-ZXo"/>
+                <constraint firstItem="R5H-ca-Qd7" firstAttribute="top" secondItem="xga-fQ-hAx" secondAttribute="bottom" constant="50" id="apy-lV-DoH"/>
+                <constraint firstItem="xga-fQ-hAx" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="hyC-6R-eCh"/>
+                <constraint firstAttribute="centerX" secondItem="xga-fQ-hAx" secondAttribute="centerX" id="kfF-7S-uTh"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="xga-fQ-hAx"/>
+                    <exclude reference="zjd-Q8-rHp"/>
+                    <exclude reference="R5H-ca-Qd7"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="HcR-Xp-ODe"/>
+                    <exclude reference="apy-lV-DoH"/>
+                    <exclude reference="4Wi-ju-bsL"/>
+                    <exclude reference="WUD-Do-ZXo"/>
+                    <exclude reference="7uY-oS-9xd"/>
+                    <exclude reference="hyC-6R-eCh"/>
+                    <exclude reference="kfF-7S-uTh"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="xga-fQ-hAx"/>
+                    <include reference="zjd-Q8-rHp"/>
+                    <include reference="R5H-ca-Qd7"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="HcR-Xp-ODe"/>
+                    <include reference="apy-lV-DoH"/>
+                    <include reference="4Wi-ju-bsL"/>
+                    <include reference="WUD-Do-ZXo"/>
+                    <include reference="7uY-oS-9xd"/>
+                    <include reference="hyC-6R-eCh"/>
+                    <include reference="kfF-7S-uTh"/>
+                </mask>
+            </variation>
+        </view>
+        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" id="N51-tr-Xrd">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="1104"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OrF-ap-kFX">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CyK-9Y-drf">
+                    <rect key="frame" x="0.0" y="736" width="414" height="368"/>
+                    <subviews>
+                        <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="bL8-EG-j6a">
+                            <rect key="frame" x="127" y="29" width="160" height="29"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="28" id="UPH-Q7-Ukb"/>
+                                <constraint firstAttribute="width" constant="160" id="sfe-55-pJh"/>
+                            </constraints>
+                            <segments>
+                                <segment title="Logo"/>
+                                <segment title="Name"/>
+                            </segments>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="UPH-Q7-Ukb"/>
+                                    <exclude reference="sfe-55-pJh"/>
+                                </mask>
+                            </variation>
+                            <variation key="heightClass=regular-widthClass=compact">
+                                <mask key="constraints">
+                                    <include reference="UPH-Q7-Ukb"/>
+                                    <include reference="sfe-55-pJh"/>
+                                </mask>
+                            </variation>
+                        </segmentedControl>
+                    </subviews>
+                    <color key="backgroundColor" red="0.28690451383590698" green="0.37908032536506653" blue="0.4623638391494751" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="bL8-EG-j6a" firstAttribute="top" secondItem="CyK-9Y-drf" secondAttribute="top" constant="29" id="6Er-mb-ofU"/>
+                        <constraint firstAttribute="centerX" secondItem="bL8-EG-j6a" secondAttribute="centerX" id="Gw6-sF-DCM"/>
+                        <constraint firstAttribute="bottom" secondItem="bL8-EG-j6a" secondAttribute="bottom" constant="311" id="WQa-3S-nGB"/>
+                        <constraint firstAttribute="width" constant="414" id="mRx-Ct-Hk1"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="mRx-Ct-Hk1"/>
+                            <exclude reference="6Er-mb-ofU"/>
+                            <exclude reference="Gw6-sF-DCM"/>
+                            <exclude reference="WQa-3S-nGB"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="mRx-Ct-Hk1"/>
+                            <include reference="6Er-mb-ofU"/>
+                            <include reference="Gw6-sF-DCM"/>
+                            <include reference="WQa-3S-nGB"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.28690451383590698" green="0.37908032536506653" blue="0.4623638391494751" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="CyK-9Y-drf" firstAttribute="top" secondItem="N51-tr-Xrd" secondAttribute="top" constant="736" id="hpb-UE-3Bv"/>
+                <constraint firstItem="CyK-9Y-drf" firstAttribute="top" secondItem="N51-tr-Xrd" secondAttribute="top" constant="736" id="j72-sJ-iJn"/>
+                <constraint firstItem="CyK-9Y-drf" firstAttribute="leading" secondItem="N51-tr-Xrd" secondAttribute="leading" id="sNe-as-SXa"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="hpb-UE-3Bv"/>
+                    <exclude reference="j72-sJ-iJn"/>
+                    <exclude reference="sNe-as-SXa"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="constraints">
+                    <include reference="hpb-UE-3Bv"/>
+                    <include reference="j72-sJ-iJn"/>
+                    <include reference="sNe-as-SXa"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="delegate" destination="-1" id="zU2-fq-RYl"/>
+            </connections>
+            <point key="canvasLocation" x="-252" y="547"/>
+        </scrollView>
+        <view contentMode="scaleToFill" id="LmH-oO-f0L">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Browse Logos" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YEe-aQ-ib7">
+                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                        <rect key="frame" x="25" y="21" width="111" height="21"/>
+                    </variation>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="afM-SK-Qbf">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" red="0.10645212978124619" green="0.73670762777328491" blue="0.60660290718078613" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                        <rect key="frame" x="25" y="50" width="267" height="1"/>
+                    </variation>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="qEF-nd-LQ7">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="separatorColor" red="0.10645212978124619" green="0.73670762777328491" blue="0.60660290718078613" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                        <rect key="frame" x="30" y="62" width="262" height="180"/>
+                    </variation>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="3PG-6i-YgF"/>
+                        <outlet property="delegate" destination="-1" id="F6E-WV-6bo"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <color key="tintColor" red="0.10645212978124619" green="0.73670762777328491" blue="0.60660290718078613" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="YEe-aQ-ib7"/>
+                    <exclude reference="afM-SK-Qbf"/>
+                    <exclude reference="qEF-nd-LQ7"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="YEe-aQ-ib7"/>
+                    <include reference="afM-SK-Qbf"/>
+                    <include reference="qEF-nd-LQ7"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="-700" y="967"/>
+        </view>
+        <view contentMode="scaleToFill" id="ohX-Vf-Qoz">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edit Text" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fMJ-dR-B8L">
+                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                        <rect key="frame" x="25" y="21" width="67" height="21"/>
+                    </variation>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aEo-XG-Olh">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" red="0.10645212978124619" green="0.73670762777328491" blue="0.60660290718078613" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                        <rect key="frame" x="25" y="50" width="267" height="1"/>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <color key="tintColor" red="0.10645212978124619" green="0.73670762777328491" blue="0.60660290718078613" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="fMJ-dR-B8L"/>
+                    <exclude reference="aEo-XG-Olh"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="fMJ-dR-B8L"/>
+                    <include reference="aEo-XG-Olh"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="172" y="967"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="logo_1.png" width="512" height="512"/>
+    </resources>
+</document>

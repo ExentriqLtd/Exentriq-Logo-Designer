@@ -1,0 +1,35 @@
+<div class="col-sm-4">
+  <label for="fillcolorpicker">Fill color</label>
+	<input type="text" id='fillcolorpicker' ng-model="image.fillcolor" ng-change="changeFillColor()" />
+</div>
+
+<div class="col-sm-4">
+  <label for="bordercolorpicker">Border color</label>
+	<input type="text" id='bordercolorpicker' ng-model="image.bordercolor" ng-change="changeBorderColor()" />
+</div>
+
+<div class="col-sm-4">
+  <label for="borderwidth">Border width</label>
+	<input id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="0" ng-model="image.borderwidth" ng-change="changeBorderWidth()"/>
+</div>
+
+<script type="text/javascript">
+	$("#fillcolorpicker").spectrum({
+  	color: "#000",
+  	preferredFormat: "rgb"
+	});
+
+	$("#bordercolorpicker").spectrum({
+  	color: "#000",
+  	preferredFormat: "rgb"
+	});
+	$('.controls').hide();
+
+		// With JQuery
+	$('#ex1').slider({
+		formatter: function(value) {
+			return 'Current value: ' + value;
+		}
+	});
+
+</script>

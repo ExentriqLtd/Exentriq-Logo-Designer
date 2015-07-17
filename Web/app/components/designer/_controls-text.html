@@ -1,0 +1,36 @@
+<div class="col-sm-4">
+  <label for="textcolorpicker">Text color</label>
+	<input type="text" id='textcolorpicker' ng-model="text.color" ng-change="changeTextColor()" />
+</div>
+
+<div class="col-sm-4">
+  <label for="textfontselect">Font family</label>
+	<select class="form-control" id="textfontselect" ng-model="text.fontfamily" ng-change="changeTextFontFamily()">
+    <option>Open Sans</option>
+    <option>Roboto</option>
+    <option>Lato</option>
+    <option>Oswald</option>
+    <option>Lora</option>
+  </select>
+ </div>
+
+<script type="text/javascript">
+	$("#textcolorpicker").spectrum({
+  	color: "#000",
+  	preferredFormat: "rgb"
+	});
+
+	$("#bordercolorpicker").spectrum({
+  	color: "#000",
+  	preferredFormat: "rgb"
+	});
+	$('#controls').hide();
+
+		// With JQuery
+	$('#ex1').slider({
+		formatter: function(value) {
+			return 'Current value: ' + value;
+		}
+	});
+
+</script>

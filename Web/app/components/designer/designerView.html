@@ -1,0 +1,46 @@
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-3 sidebar">
+
+			<div class="row">
+				<input type="text" placeholder="Name" ng-model="name" ng-change="setLogoName()" class="centered">
+			</div>
+
+			<div class="row">
+				<input type="text" placeholder="Search" ng-model="query" class="centered">
+			</div>
+
+			<div class="row">
+				<ul class="symbols">
+	        <li ng-repeat="symbol in symbols | filter:query">
+		       <img ng-src="{{symbol.svgPath}}" ng-click="setLogoSymbol(symbol.svgPath)">
+	        </li>
+	      </ul>
+	    </div>
+
+			<div class="row">
+				<input id="save" type="submit" value="Save" class="btn btn-success centered" ng-click="saveLogo()"></button>
+			</div>
+
+		</div>
+
+		<div class="col-sm-9 main">
+			<div class="row">
+				<div id="controls-symbol" class="controls col-sm-10 col-sm-offset-1">
+					<ng-include src="'app/components/designer/_controls-symbol.html'" scope="canvas"></ng-include>
+				</div>
+				<div id="controls-text" class="controls col-sm-10 col-sm-offset-1">
+					<ng-include src="'app/components/designer/_controls-text.html'" scope="canvas"></ng-include>
+				</div>
+			</div>
+
+			<div class="row">
+				<canvas id="c"></canvas>
+			</div>
+
+			<div id="preview" class="row">
+				<ng-include src="'app/components/designer/_preview.html'" scope="preview"></ng-include>
+			</div>
+		
+	</div>
+</div>

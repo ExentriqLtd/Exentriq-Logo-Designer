@@ -1,7 +1,42 @@
-# Specifies intentionally untracked files to ignore when using Git
-# http://git-scm.com/docs/gitignore
+# OS X
+.DS_Store
 
-node_modules/
-platforms/
-plugins/
+# Xcode
+*/build/*
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+*.xccheckout
+profile
+*.moved-aside
+DerivedData
+.idea/
+*.hmap
+*.xccheckout
+*.xcuserstate
+UserInterfaceState.xcuserstate
+
+# CocoaPods
+Pods
 .idea/*
+
+#Angular / Bower
+logs/*
+!.gitkeep
+node_modules/
+bower_components/
+tmp
+
+#Android
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+/build
+/captures

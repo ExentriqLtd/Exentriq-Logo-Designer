@@ -1,0 +1,558 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D06F9A11B5947C20050CF40 /* LogoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D06F9A01B5947C20050CF40 /* LogoCell.m */; };
+		2D2AC0841B4D491F0075106D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D2AC0831B4D491F0075106D /* main.m */; };
+		2D2AC0871B4D491F0075106D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D2AC0861B4D491F0075106D /* AppDelegate.m */; };
+		2D2AC08A1B4D491F0075106D /* exentriq_logo_designer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2D2AC0881B4D491F0075106D /* exentriq_logo_designer.xcdatamodeld */; };
+		2D2AC08D1B4D491F0075106D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D2AC08C1B4D491F0075106D /* ViewController.m */; };
+		2D2AC0901B4D491F0075106D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D2AC08E1B4D491F0075106D /* Main.storyboard */; };
+		2D2AC0921B4D491F0075106D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D2AC0911B4D491F0075106D /* Images.xcassets */; };
+		2D2AC0951B4D491F0075106D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D2AC0931B4D491F0075106D /* LaunchScreen.xib */; };
+		2D2AC0A11B4D491F0075106D /* exentriq_logo_designerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D2AC0A01B4D491F0075106D /* exentriq_logo_designerTests.m */; };
+		2D2AC0B21B4D49B00075106D /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D2AC0B01B4D49B00075106D /* MainViewController.m */; };
+		2D2AC0B31B4D49B00075106D /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D2AC0B11B4D49B00075106D /* MainViewController.xib */; };
+		2D2AC0B71B4D4D550075106D /* DesignViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D2AC0B51B4D4D550075106D /* DesignViewController.m */; };
+		2D2AC0B81B4D4D550075106D /* DesignViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D2AC0B61B4D4D550075106D /* DesignViewController.xib */; };
+		2D2AC0BE1B4D4E4C0075106D /* PreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D2AC0BC1B4D4E4C0075106D /* PreviewViewController.m */; };
+		2D2AC0BF1B4D4E4C0075106D /* PreviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D2AC0BD1B4D4E4C0075106D /* PreviewViewController.xib */; };
+		2D2AC0C31B4D4E590075106D /* ExportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D2AC0C11B4D4E590075106D /* ExportViewController.m */; };
+		2D2AC0C41B4D4E590075106D /* ExportViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D2AC0C21B4D4E590075106D /* ExportViewController.xib */; };
+		2D2AC0CB1B4D6DF30075106D /* logo_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D2AC0C61B4D6DF30075106D /* logo_1.png */; };
+		2D2AC0CC1B4D6DF30075106D /* logo_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D2AC0C71B4D6DF30075106D /* logo_2.png */; };
+		2D2AC0CD1B4D6DF30075106D /* logo_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D2AC0C81B4D6DF30075106D /* logo_3.png */; };
+		2D2AC0CE1B4D6DF30075106D /* logo_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D2AC0C91B4D6DF30075106D /* logo_4.png */; };
+		2D2AC0CF1B4D6DF30075106D /* logo_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D2AC0CA1B4D6DF30075106D /* logo_5.png */; };
+		2D2AC0D21B4D74A80075106D /* LogoImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D2AC0D11B4D74A80075106D /* LogoImageView.m */; };
+		2D2AC0D51B4EA0E80075106D /* LogoLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D2AC0D41B4EA0E80075106D /* LogoLabel.m */; };
+		2D2AC0D91B4EB1530075106D /* background_pattern.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D2AC0D81B4EB1530075106D /* background_pattern.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2D2AC09B1B4D491F0075106D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D2AC0761B4D491F0075106D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D2AC07D1B4D491F0075106D;
+			remoteInfo = "exentriq-logo-designer";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2D06F99F1B5947C20050CF40 /* LogoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogoCell.h; sourceTree = "<group>"; };
+		2D06F9A01B5947C20050CF40 /* LogoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogoCell.m; sourceTree = "<group>"; };
+		2D2AC07E1B4D491F0075106D /* exentriq-logo-designer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "exentriq-logo-designer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D2AC0821B4D491F0075106D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D2AC0831B4D491F0075106D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2D2AC0851B4D491F0075106D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2D2AC0861B4D491F0075106D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2D2AC0891B4D491F0075106D /* exentriq_logo_designer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = exentriq_logo_designer.xcdatamodel; sourceTree = "<group>"; };
+		2D2AC08B1B4D491F0075106D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2D2AC08C1B4D491F0075106D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2D2AC08F1B4D491F0075106D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2D2AC0911B4D491F0075106D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2D2AC0941B4D491F0075106D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		2D2AC09A1B4D491F0075106D /* exentriq-logo-designerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "exentriq-logo-designerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D2AC09F1B4D491F0075106D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D2AC0A01B4D491F0075106D /* exentriq_logo_designerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = exentriq_logo_designerTests.m; sourceTree = "<group>"; };
+		2D2AC0AF1B4D49B00075106D /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		2D2AC0B01B4D49B00075106D /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		2D2AC0B11B4D49B00075106D /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		2D2AC0B41B4D4D550075106D /* DesignViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DesignViewController.h; sourceTree = "<group>"; };
+		2D2AC0B51B4D4D550075106D /* DesignViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DesignViewController.m; sourceTree = "<group>"; };
+		2D2AC0B61B4D4D550075106D /* DesignViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DesignViewController.xib; sourceTree = "<group>"; };
+		2D2AC0BB1B4D4E4C0075106D /* PreviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreviewViewController.h; sourceTree = "<group>"; };
+		2D2AC0BC1B4D4E4C0075106D /* PreviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreviewViewController.m; sourceTree = "<group>"; };
+		2D2AC0BD1B4D4E4C0075106D /* PreviewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreviewViewController.xib; sourceTree = "<group>"; };
+		2D2AC0C01B4D4E590075106D /* ExportViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExportViewController.h; sourceTree = "<group>"; };
+		2D2AC0C11B4D4E590075106D /* ExportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExportViewController.m; sourceTree = "<group>"; };
+		2D2AC0C21B4D4E590075106D /* ExportViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExportViewController.xib; sourceTree = "<group>"; };
+		2D2AC0C61B4D6DF30075106D /* logo_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_1.png; sourceTree = "<group>"; };
+		2D2AC0C71B4D6DF30075106D /* logo_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_2.png; sourceTree = "<group>"; };
+		2D2AC0C81B4D6DF30075106D /* logo_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_3.png; sourceTree = "<group>"; };
+		2D2AC0C91B4D6DF30075106D /* logo_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_4.png; sourceTree = "<group>"; };
+		2D2AC0CA1B4D6DF30075106D /* logo_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_5.png; sourceTree = "<group>"; };
+		2D2AC0D01B4D74A80075106D /* LogoImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogoImageView.h; sourceTree = "<group>"; };
+		2D2AC0D11B4D74A80075106D /* LogoImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogoImageView.m; sourceTree = "<group>"; };
+		2D2AC0D31B4EA0E80075106D /* LogoLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogoLabel.h; sourceTree = "<group>"; };
+		2D2AC0D41B4EA0E80075106D /* LogoLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogoLabel.m; sourceTree = "<group>"; };
+		2D2AC0D81B4EB1530075106D /* background_pattern.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background_pattern.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2D2AC07B1B4D491F0075106D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D2AC0971B4D491F0075106D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D2AC0751B4D491F0075106D = {
+			isa = PBXGroup;
+			children = (
+				2D2AC0801B4D491F0075106D /* exentriq-logo-designer */,
+				2D2AC09D1B4D491F0075106D /* exentriq-logo-designerTests */,
+				2D2AC07F1B4D491F0075106D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2D2AC07F1B4D491F0075106D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2D2AC07E1B4D491F0075106D /* exentriq-logo-designer.app */,
+				2D2AC09A1B4D491F0075106D /* exentriq-logo-designerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2D2AC0801B4D491F0075106D /* exentriq-logo-designer */ = {
+			isa = PBXGroup;
+			children = (
+				2D2AC0851B4D491F0075106D /* AppDelegate.h */,
+				2D2AC0861B4D491F0075106D /* AppDelegate.m */,
+				2D2AC0B91B4D4D5F0075106D /* Controllers */,
+				2D2AC0BA1B4D4D910075106D /* Views */,
+				2D2AC08B1B4D491F0075106D /* ViewController.h */,
+				2D2AC08C1B4D491F0075106D /* ViewController.m */,
+				2D2AC08E1B4D491F0075106D /* Main.storyboard */,
+				2D2AC0911B4D491F0075106D /* Images.xcassets */,
+				2D2AC0931B4D491F0075106D /* LaunchScreen.xib */,
+				2D2AC0881B4D491F0075106D /* exentriq_logo_designer.xcdatamodeld */,
+				2D2AC0811B4D491F0075106D /* Supporting Files */,
+			);
+			path = "exentriq-logo-designer";
+			sourceTree = "<group>";
+		};
+		2D2AC0811B4D491F0075106D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2D2AC0821B4D491F0075106D /* Info.plist */,
+				2D2AC0831B4D491F0075106D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2D2AC09D1B4D491F0075106D /* exentriq-logo-designerTests */ = {
+			isa = PBXGroup;
+			children = (
+				2D2AC0A01B4D491F0075106D /* exentriq_logo_designerTests.m */,
+				2D2AC09E1B4D491F0075106D /* Supporting Files */,
+			);
+			path = "exentriq-logo-designerTests";
+			sourceTree = "<group>";
+		};
+		2D2AC09E1B4D491F0075106D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2D2AC09F1B4D491F0075106D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2D2AC0B91B4D4D5F0075106D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2D2AC0AF1B4D49B00075106D /* MainViewController.h */,
+				2D2AC0B01B4D49B00075106D /* MainViewController.m */,
+				2D2AC0B41B4D4D550075106D /* DesignViewController.h */,
+				2D2AC0B51B4D4D550075106D /* DesignViewController.m */,
+				2D2AC0BB1B4D4E4C0075106D /* PreviewViewController.h */,
+				2D2AC0BC1B4D4E4C0075106D /* PreviewViewController.m */,
+				2D2AC0C01B4D4E590075106D /* ExportViewController.h */,
+				2D2AC0C11B4D4E590075106D /* ExportViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		2D2AC0BA1B4D4D910075106D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2D2AC0C51B4D6DBA0075106D /* Assets */,
+				2D2AC0D01B4D74A80075106D /* LogoImageView.h */,
+				2D2AC0D11B4D74A80075106D /* LogoImageView.m */,
+				2D2AC0D31B4EA0E80075106D /* LogoLabel.h */,
+				2D2AC0D41B4EA0E80075106D /* LogoLabel.m */,
+				2D06F99F1B5947C20050CF40 /* LogoCell.h */,
+				2D06F9A01B5947C20050CF40 /* LogoCell.m */,
+				2D2AC0B11B4D49B00075106D /* MainViewController.xib */,
+				2D2AC0B61B4D4D550075106D /* DesignViewController.xib */,
+				2D2AC0BD1B4D4E4C0075106D /* PreviewViewController.xib */,
+				2D2AC0C21B4D4E590075106D /* ExportViewController.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		2D2AC0C51B4D6DBA0075106D /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				2D2AC0D81B4EB1530075106D /* background_pattern.png */,
+				2D2AC0C61B4D6DF30075106D /* logo_1.png */,
+				2D2AC0C71B4D6DF30075106D /* logo_2.png */,
+				2D2AC0C81B4D6DF30075106D /* logo_3.png */,
+				2D2AC0C91B4D6DF30075106D /* logo_4.png */,
+				2D2AC0CA1B4D6DF30075106D /* logo_5.png */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2D2AC07D1B4D491F0075106D /* exentriq-logo-designer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D2AC0A41B4D491F0075106D /* Build configuration list for PBXNativeTarget "exentriq-logo-designer" */;
+			buildPhases = (
+				2D2AC07A1B4D491F0075106D /* Sources */,
+				2D2AC07B1B4D491F0075106D /* Frameworks */,
+				2D2AC07C1B4D491F0075106D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "exentriq-logo-designer";
+			productName = "exentriq-logo-designer";
+			productReference = 2D2AC07E1B4D491F0075106D /* exentriq-logo-designer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2D2AC0991B4D491F0075106D /* exentriq-logo-designerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D2AC0A71B4D491F0075106D /* Build configuration list for PBXNativeTarget "exentriq-logo-designerTests" */;
+			buildPhases = (
+				2D2AC0961B4D491F0075106D /* Sources */,
+				2D2AC0971B4D491F0075106D /* Frameworks */,
+				2D2AC0981B4D491F0075106D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2D2AC09C1B4D491F0075106D /* PBXTargetDependency */,
+			);
+			name = "exentriq-logo-designerTests";
+			productName = "exentriq-logo-designerTests";
+			productReference = 2D2AC09A1B4D491F0075106D /* exentriq-logo-designerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2D2AC0761B4D491F0075106D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = EMIKETIC;
+				TargetAttributes = {
+					2D2AC07D1B4D491F0075106D = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					2D2AC0991B4D491F0075106D = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 2D2AC07D1B4D491F0075106D;
+					};
+				};
+			};
+			buildConfigurationList = 2D2AC0791B4D491F0075106D /* Build configuration list for PBXProject "exentriq-logo-designer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2D2AC0751B4D491F0075106D;
+			productRefGroup = 2D2AC07F1B4D491F0075106D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2D2AC07D1B4D491F0075106D /* exentriq-logo-designer */,
+				2D2AC0991B4D491F0075106D /* exentriq-logo-designerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2D2AC07C1B4D491F0075106D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D2AC0CB1B4D6DF30075106D /* logo_1.png in Resources */,
+				2D2AC0901B4D491F0075106D /* Main.storyboard in Resources */,
+				2D2AC0C41B4D4E590075106D /* ExportViewController.xib in Resources */,
+				2D2AC0CF1B4D6DF30075106D /* logo_5.png in Resources */,
+				2D2AC0951B4D491F0075106D /* LaunchScreen.xib in Resources */,
+				2D2AC0921B4D491F0075106D /* Images.xcassets in Resources */,
+				2D2AC0BF1B4D4E4C0075106D /* PreviewViewController.xib in Resources */,
+				2D2AC0B81B4D4D550075106D /* DesignViewController.xib in Resources */,
+				2D2AC0CD1B4D6DF30075106D /* logo_3.png in Resources */,
+				2D2AC0CE1B4D6DF30075106D /* logo_4.png in Resources */,
+				2D2AC0CC1B4D6DF30075106D /* logo_2.png in Resources */,
+				2D2AC0B31B4D49B00075106D /* MainViewController.xib in Resources */,
+				2D2AC0D91B4EB1530075106D /* background_pattern.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D2AC0981B4D491F0075106D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2D2AC07A1B4D491F0075106D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D2AC08A1B4D491F0075106D /* exentriq_logo_designer.xcdatamodeld in Sources */,
+				2D2AC0871B4D491F0075106D /* AppDelegate.m in Sources */,
+				2D2AC0C31B4D4E590075106D /* ExportViewController.m in Sources */,
+				2D06F9A11B5947C20050CF40 /* LogoCell.m in Sources */,
+				2D2AC08D1B4D491F0075106D /* ViewController.m in Sources */,
+				2D2AC0B21B4D49B00075106D /* MainViewController.m in Sources */,
+				2D2AC0BE1B4D4E4C0075106D /* PreviewViewController.m in Sources */,
+				2D2AC0B71B4D4D550075106D /* DesignViewController.m in Sources */,
+				2D2AC0D21B4D74A80075106D /* LogoImageView.m in Sources */,
+				2D2AC0841B4D491F0075106D /* main.m in Sources */,
+				2D2AC0D51B4EA0E80075106D /* LogoLabel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D2AC0961B4D491F0075106D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D2AC0A11B4D491F0075106D /* exentriq_logo_designerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2D2AC09C1B4D491F0075106D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2D2AC07D1B4D491F0075106D /* exentriq-logo-designer */;
+			targetProxy = 2D2AC09B1B4D491F0075106D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2D2AC08E1B4D491F0075106D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D2AC08F1B4D491F0075106D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2D2AC0931B4D491F0075106D /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D2AC0941B4D491F0075106D /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2D2AC0A21B4D491F0075106D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2D2AC0A31B4D491F0075106D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2D2AC0A51B4D491F0075106D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "exentriq-logo-designer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2D2AC0A61B4D491F0075106D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "exentriq-logo-designer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2D2AC0A81B4D491F0075106D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "exentriq-logo-designerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/exentriq-logo-designer.app/exentriq-logo-designer";
+			};
+			name = Debug;
+		};
+		2D2AC0A91B4D491F0075106D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "exentriq-logo-designerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/exentriq-logo-designer.app/exentriq-logo-designer";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D2AC0791B4D491F0075106D /* Build configuration list for PBXProject "exentriq-logo-designer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D2AC0A21B4D491F0075106D /* Debug */,
+				2D2AC0A31B4D491F0075106D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D2AC0A41B4D491F0075106D /* Build configuration list for PBXNativeTarget "exentriq-logo-designer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D2AC0A51B4D491F0075106D /* Debug */,
+				2D2AC0A61B4D491F0075106D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D2AC0A71B4D491F0075106D /* Build configuration list for PBXNativeTarget "exentriq-logo-designerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D2AC0A81B4D491F0075106D /* Debug */,
+				2D2AC0A91B4D491F0075106D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2D2AC0881B4D491F0075106D /* exentriq_logo_designer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2D2AC0891B4D491F0075106D /* exentriq_logo_designer.xcdatamodel */,
+			);
+			currentVersion = 2D2AC0891B4D491F0075106D /* exentriq_logo_designer.xcdatamodel */;
+			path = exentriq_logo_designer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2D2AC0761B4D491F0075106D /* Project object */;
+}
