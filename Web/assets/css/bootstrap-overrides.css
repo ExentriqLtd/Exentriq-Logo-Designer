@@ -1,0 +1,48 @@
+
+/* ----------------------------------NavBar---------------------------
+ --------------------------------------------------------------------*/
+
+.navbar{
+  margin-bottom: 0;
+	height: 60px;
+}
+
+.navbar-default {
+  background-color: #233347;
+  border: none;
+  border-radius: 0;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #fff;
+  line-height: 30px;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+  color: #ddd;
+}
+/* ----------------------------------Buttons & Inputs---------------------------
+ --------------------------------------------------------------------*/
+
+.btn-success {
+  background-color: #1BBC9B;
+  border: none;
+  border-radius: 0;
+  padding: 10px 50px;
+}
+
+.btn-success:hover, .btn-success:active, .btn-success:focus{
+  background-color: #1A9178 !important;
+}
+
+input{
+  background: transparent;
+  color: white;
+  border: 0;
+  border-bottom: 2px solid;
+}
+
+input:focus{
+  border: 10px;
+  border-bottom: 2px solid;
+}

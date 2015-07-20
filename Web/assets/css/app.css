@@ -10,15 +10,12 @@
   margin: 0 auto;
 }
 
-.navbar{
-  margin-bottom: 0;
-}
 
 /* -------------------------------Sidebar-------------------------------------
 -------------------------------------------------------------------------------*/
 .sidebar{
-  background: #F5F5F5;
-  height: 600px;
+  background: #4A6175;
+  min-height: 110vh;
 }
 .sidebar li{
   display: inline-block;
@@ -33,7 +30,6 @@
 -------------------------------------------------------------------------------*/
 .main{
   height: 500px;
-  padding-top: 50px;
 }
 
 #c{
@@ -42,7 +38,10 @@
 }
 
 #preview{
-  margin-bottom: 50px;
+  position: fixed;
+  bottom: -20px;
+  right: 0;
+  width: 75%;
 }
 
 input{
@@ -71,16 +70,19 @@ button#save{
   background-size: contain;
 }
 #preview img{
-  width: 150px;
-  height: 100px;
+  width: 170px;
 }
 
 #shirt-background img{
-  margin-top: 50px;
+  margin-top: 30px;
+  padding: 0;
 }
 
 .controls{
   background: #333;
   padding: 20px 50px;
   color: white;
+  position: absolute;
+  top: 10px;
+  z-index: 10;
 }

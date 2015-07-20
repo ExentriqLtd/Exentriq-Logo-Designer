@@ -11,10 +11,10 @@ angular.module('myApp.designer', ['ngRoute'])
 
 .controller('DesignerCtrl', ['$scope', 'Symbol',
   function($scope, Symbol) {
-    // init canvas and its elements--------------------------------------------
+    // ----------------------init canvas and its elements------------------------
     var canvas = new fabric.Canvas('c');
     canvas.setWidth(800);
-    canvas.setHeight(500);
+    canvas.setHeight(400);
 
     $scope.symbol = new Symboll(canvas);
     $scope.text = new Text(canvas);
@@ -25,30 +25,35 @@ angular.module('myApp.designer', ['ngRoute'])
 
     setCanvasListener(canvas, $scope);
 
-    // draw symbol in canvas---------------------------------------------------
+    // ---------------------draw symbol in canvas-----------------------------
     $scope.setLogoSymbol = function(svgPath) {
-      var symbolCanvas = $scope.symbol;
-      var oldSymbol = symbolCanvas.e;
+      var oldSymbol = $scope.symbol;
       $.get(svgPath, function(svgString){
           var path = fabric.loadSVGFromString(svgString, function(objects, options) {
           var obj = fabric.util.groupSVGElements(objects, options);
-          obj.scaleToHeight(canvas.height / 3)
-            .set({ left: symbolCanvas.left, top: symbolCanvas.top })
+          obj.scaleToHeight(oldSymbol.scaleTo)
+            .set({ left: oldSymbol.left, top: oldSymbol.top })
             .setCoords();
-          symbolCanvas.e = obj;
-          
-          $scope.refreshCanvasForSvg(oldSymbol);
+
+          $scope.refreshCanvasForSvg(obj);
         });
       }, 'text');
     };
 
-    $scope.refreshCanvasForSvg = function(oldSymbol){
-      canvas.remove(oldSymbol);
+    $scope.refreshCanvasForSvg = function(obj){
+      canvas.discardActiveGroup();
+      canvas.remove($scope.symbol.e);
+      $scope.symbol.e = obj;
+      for (var i = 0; i < $scope.symbol.e.paths.length; i++) {
+        $scope.symbol.e.paths[i].setFill($scope.symbol.fillColor);
+      }
       canvas.add($scope.symbol.e);
-      canvas.renderAll()
+      $scope.$apply(function(){
+        $scope.preview = canvas.toDataURL("image/png");
+      });
     };
 
-    // draw text in canvas-----------------------------------------------------
+    // -------------------------draw text in canvas-------------------------------
     $scope.setLogoName = function(){
       var textCanvas = $scope.text;
       var oldText = textCanvas.e;
@@ -67,26 +72,15 @@ angular.module('myApp.designer', ['ngRoute'])
 
     $scope.changeFillColor = function(){
       var activeObject = canvas.getActiveObject();
+      var symbolCanvas = $scope.symbol;
       for (var i = 0; i < activeObject.paths.length; i++) {
         activeObject.paths[i].setFill($('#fillcolorpicker').val());
       }
+      symbolCanvas.fillColor = $('#fillcolorpicker').val();
       canvas.renderAll();
-    };
-
-    $scope.changeBorderColor = function(){
-      var activeObject = canvas.getActiveObject();
-      for (var i = 0; i < activeObject.paths.length; i++) {
-          activeObject.paths[i].setStroke($('#bordercolorpicker').val());
-      }
-      canvas.renderAll();
-    };
-
-    $scope.changeBorderWidth = function(){
-      var activeObject = canvas.getActiveObject();
-      for (var i = 0; i < activeObject.paths.length; i++) {
-        activeObject.paths[i].setStrokeWidth(1);
-      }
-      canvas.renderAll();
+      canvas.discardActiveObject();
+      $scope.preview = canvas.toDataURL("image/png");
+      canvas.setActiveObject(activeObject);
     };
 
     // Symbol properties change functions------------------------------------------
@@ -95,6 +89,7 @@ angular.module('myApp.designer', ['ngRoute'])
       var activeObject = canvas.getActiveObject();
       activeObject.setFill($('#textcolorpicker').val());
       canvas.renderAll();
+      $scope.preview = canvas.toDataURL("image/png");
     };
 
     $scope.changeTextFontFamily = function(){
@@ -104,6 +99,7 @@ angular.module('myApp.designer', ['ngRoute'])
     };
 
     $scope.saveLogo = function () {
+      canvas.discardActiveObject();
       saveToDisk(canvas, "logo.png");
     };
 
@@ -124,7 +120,9 @@ function setCanvasListener(canvas, $scope){
         text.top = activeObject.get('top');
       }
       $scope.$apply(function(){
+        canvas.discardActiveObject();
         $scope.preview = canvas.toDataURL("image/png");
+        canvas.setActiveObject(activeObject);
       });
     }
   });
@@ -142,6 +140,23 @@ function setCanvasListener(canvas, $scope){
 
   canvas.on({'selection:cleared': function(e) {
      $('.controls').hide();
+   }
+  });
+
+  canvas.on({'object:modified': function(e) {
+    var activeObject = e.target;
+    if(activeObject.get('type') == 'text'){
+      
+    }else if (activeObject.get('type') == 'path-group'){
+      $scope.$apply(function(){
+        canvas.discardActiveObject();
+        $scope.preview = canvas.toDataURL("image/png");
+        canvas.setActiveObject(activeObject);
+      });
+      $scope.symbol.scaleTo = activeObject.width * activeObject.scaleX;
+      $scope.symbol.left = activeObject.left;
+      $scope.symbol.top = activeObject.top;
+    }
    }
   });
 
