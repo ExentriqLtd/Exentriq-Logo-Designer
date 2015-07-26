@@ -10,12 +10,15 @@
 
 @interface LogoCell : UITableViewCell
 {
-    UIImageView *_logoImage;
+    UIImageView *_logoImageView;
+    UIImage *_logoImage;
+
 }
 
-@property (nonatomic, strong)  UIImageView* logoImage;
+@property (nonatomic, strong)  UIImageView *logoImageView;
+@property (nonatomic, strong) UIImage *logoImage;
 
 
-- (void)setImageForLogoImage:(UIImage *)image;
+- (void)setImageViewForLogoImage:(UIImage *)image;
 
 @end

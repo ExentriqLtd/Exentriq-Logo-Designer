@@ -77,18 +77,30 @@
     [_librarySelector addTarget:self
                          action:@selector(switchVisibleLibraryEditor)
                forControlEvents:UIControlEventValueChanged];
+    
+    // Add logo image, name and tagline view to the library view
     [_libraryView addSubview:_libraryImageEditorView];
     [_libraryImageEditorView setFrame:CGRectMake(0,
                                                  70,
                                                  _libraryImageEditorView.frame.size.width,
                                                  _libraryImageEditorView.frame.size.height)];
     [_libraryImageEditorView setHidden:YES];
-    [_libraryView addSubview:_libraryTextEditorView];
-    [_libraryTextEditorView setFrame:CGRectMake(0,
+    
+    [_libraryView addSubview:_libraryNameTextEditorView];
+    [_libraryNameTextEditorView setFrame:CGRectMake(0,
                                                 70,
-                                                _libraryTextEditorView.frame.size.width,
-                                                _libraryTextEditorView.frame.size.height)];
-    [_libraryTextEditorView setHidden:YES];
+                                                _libraryNameTextEditorView.frame.size.width,
+                                                _libraryNameTextEditorView.frame.size.height)];
+    
+    [_libraryNameTextEditorView setHidden:YES];
+    
+    [_libraryView addSubview:_libraryTaglineTextEditorView];
+    [_libraryTaglineTextEditorView setFrame:CGRectMake(0,
+                                                    70,
+                                                    _libraryTaglineTextEditorView.frame.size.width,
+                                                    _libraryTaglineTextEditorView.frame.size.height)];
+    
+    [_libraryTaglineTextEditorView setHidden:YES];
     
 
     // Setup image library view
@@ -147,24 +159,46 @@
          setContentOffset:CGPointMake(0, 1.5*_libraryView.bounds.size.height)
          animated:YES];
     }
+    
+    [_librarySelector sendActionsForControlEvents:UIControlEventValueChanged];
 }
 
 #pragma mark - Library Navigation
 
 - (void)switchVisibleLibraryEditor {
-    if (_librarySelector.selectedSegmentIndex == 0) {
-        
-        [_libraryView sendSubviewToBack:_libraryTextEditorView];
-        [_libraryTextEditorView setHidden:YES];
-        [_libraryView bringSubviewToFront:_libraryImageEditorView];
-        [_libraryImageEditorView setHidden:NO];
-        
-    }
-    else {
-        [_libraryView sendSubviewToBack:_libraryImageEditorView];
-        [_libraryImageEditorView setHidden:YES];
-        [_libraryView bringSubviewToFront:_libraryTextEditorView];
-        [_libraryTextEditorView setHidden:NO];
+    
+    switch (_librarySelector.selectedSegmentIndex) {
+        case 0: {
+            [_libraryView sendSubviewToBack:_libraryNameTextEditorView];
+            [_libraryView sendSubviewToBack:_libraryTaglineTextEditorView];
+            [_libraryNameTextEditorView setHidden:YES];
+            [_libraryTaglineTextEditorView setHidden:YES];
+            [_libraryView bringSubviewToFront:_libraryImageEditorView];
+            [_libraryImageEditorView setHidden:NO];
+            break;
+        }
+        case 1: {
+            [_libraryView sendSubviewToBack:_libraryImageEditorView];
+            [_libraryView sendSubviewToBack:_libraryTaglineTextEditorView];
+            [_libraryImageEditorView setHidden:YES];
+            [_libraryTaglineTextEditorView setHidden:YES];
+            [_libraryView bringSubviewToFront:_libraryNameTextEditorView];
+            [_libraryNameTextEditorView setHidden:NO];
+            break;
+        }
+        case 2: {
+            [_libraryView sendSubviewToBack:_libraryNameTextEditorView];
+            [_libraryView sendSubviewToBack:_libraryImageEditorView];
+            [_libraryImageEditorView setHidden:YES];
+            [_libraryNameTextEditorView setHidden:YES];
+            [_libraryView bringSubviewToFront:_libraryTaglineTextEditorView];
+            [_libraryTaglineTextEditorView setHidden:NO];
+            break;
+        }
+            
+            
+        default:
+            break;
     }
 }
 
@@ -248,6 +282,16 @@
 
 #pragma mark - Table View Delegate
 
+- (void)tableView:(UITableView *)tableView
+didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (tableView == _libraryImageCollection) {
+        NSString *prefix = @"logo_";
+        _logoImage.image = [UIImage imageNamed:[prefix
+                                                stringByAppendingString:
+                                                [[NSNumber numberWithInteger:indexPath.row+1]
+                                                 stringValue]]];
+    }
+}
 
 #pragma mark - Table View Data Source
 
@@ -259,8 +303,15 @@
                              dequeueReusableCellWithIdentifier:@"LogoCell"
                              forIndexPath:indexPath];
     if (cell) {
-        [cell setImageForLogoImage:[UIImage imageNamed:@"logo_1"]];
+        NSString *prefix = @"logo_";
+        [cell
+         setImageViewForLogoImage:[UIImage imageNamed:[prefix
+                                                   stringByAppendingString:
+                                                   [[NSNumber numberWithInteger:indexPath.row+1]
+                                                    stringValue]]]];
+        [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
     }
+    
     
     return cell;
     
@@ -280,5 +331,22 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 180;
 }
 
+#pragma mark - Picker View Delegate
+
+- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row
+            forComponent:(NSInteger)component {
+    return @"Test";
+}
+
+#pragma mark - Picker View Data Source
+
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
+    return 1;
+}
+
+- (NSInteger)pickerView:(UIPickerView *)pickerView
+numberOfRowsInComponent:(NSInteger)component {
+    return 4;
+}
 
 @end

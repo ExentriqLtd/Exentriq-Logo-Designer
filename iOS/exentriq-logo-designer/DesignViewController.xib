@@ -9,8 +9,10 @@
                 <outlet property="_contentView" destination="N51-tr-Xrd" id="dzv-xi-fup"/>
                 <outlet property="_libraryImageCollection" destination="qEF-nd-LQ7" id="skX-Cd-x0n"/>
                 <outlet property="_libraryImageEditorView" destination="LmH-oO-f0L" id="G9U-Tu-d1O"/>
+                <outlet property="_libraryNameTextEditorView" destination="ohX-Vf-Qoz" id="vFe-b3-WZZ"/>
+                <outlet property="_libraryNameTextPicker" destination="DpY-op-hrh" id="xa1-ea-Vya"/>
                 <outlet property="_librarySelector" destination="bL8-EG-j6a" id="sRX-t7-tPo"/>
-                <outlet property="_libraryTextEditorView" destination="ohX-Vf-Qoz" id="wbb-dB-juA"/>
+                <outlet property="_libraryTaglineTextEditorView" destination="8xt-R9-HIF" id="UCA-AV-J6a"/>
                 <outlet property="_libraryView" destination="CyK-9Y-drf" id="Cia-Mx-rC5"/>
                 <outlet property="_logoImage" destination="xga-fQ-hAx" id="iLz-xR-TN3"/>
                 <outlet property="_logoTagline" destination="R5H-ca-Qd7" id="2Aj-Le-tdE"/>
@@ -50,7 +52,7 @@
                     <attributedString key="attributedText">
                         <fragment content="TITLE">
                             <attributes>
-                                <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <font key="NSFont" size="36" name="HelveticaNeue-Bold"/>
                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                             </attributes>
@@ -77,7 +79,7 @@
                     <attributedString key="attributedText">
                         <fragment content="Tagline">
                             <attributes>
-                                <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <font key="NSFont" size="23" name="HelveticaNeue-Light"/>
                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                             </attributes>
@@ -157,11 +159,12 @@
                             <rect key="frame" x="127" y="29" width="160" height="29"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="28" id="UPH-Q7-Ukb"/>
-                                <constraint firstAttribute="width" constant="160" id="sfe-55-pJh"/>
+                                <constraint firstAttribute="width" constant="250" id="sfe-55-pJh"/>
                             </constraints>
                             <segments>
                                 <segment title="Logo"/>
                                 <segment title="Name"/>
+                                <segment title="Tagline"/>
                             </segments>
                             <variation key="default">
                                 <mask key="constraints">
@@ -179,24 +182,30 @@
                     </subviews>
                     <color key="backgroundColor" red="0.28690451383590698" green="0.37908032536506653" blue="0.4623638391494751" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
+                        <constraint firstAttribute="centerX" secondItem="bL8-EG-j6a" secondAttribute="centerX" id="0Pj-J9-qZ9"/>
                         <constraint firstItem="bL8-EG-j6a" firstAttribute="top" secondItem="CyK-9Y-drf" secondAttribute="top" constant="29" id="6Er-mb-ofU"/>
-                        <constraint firstAttribute="centerX" secondItem="bL8-EG-j6a" secondAttribute="centerX" id="Gw6-sF-DCM"/>
+                        <constraint firstAttribute="height" constant="368" id="FKr-WH-2P7"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="414" id="Uma-Ij-j3U"/>
                         <constraint firstAttribute="bottom" secondItem="bL8-EG-j6a" secondAttribute="bottom" constant="311" id="WQa-3S-nGB"/>
                         <constraint firstAttribute="width" constant="414" id="mRx-Ct-Hk1"/>
                     </constraints>
                     <variation key="default">
                         <mask key="constraints">
+                            <exclude reference="FKr-WH-2P7"/>
+                            <exclude reference="Uma-Ij-j3U"/>
                             <exclude reference="mRx-Ct-Hk1"/>
+                            <exclude reference="0Pj-J9-qZ9"/>
                             <exclude reference="6Er-mb-ofU"/>
-                            <exclude reference="Gw6-sF-DCM"/>
                             <exclude reference="WQa-3S-nGB"/>
                         </mask>
                     </variation>
                     <variation key="heightClass=regular-widthClass=compact">
                         <mask key="constraints">
+                            <include reference="FKr-WH-2P7"/>
+                            <include reference="Uma-Ij-j3U"/>
                             <include reference="mRx-Ct-Hk1"/>
+                            <include reference="0Pj-J9-qZ9"/>
                             <include reference="6Er-mb-ofU"/>
-                            <include reference="Gw6-sF-DCM"/>
                             <include reference="WQa-3S-nGB"/>
                         </mask>
                     </variation>
@@ -287,13 +296,22 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edit Text" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fMJ-dR-B8L">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edit Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fMJ-dR-B8L">
                     <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                     <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                        <rect key="frame" x="25" y="21" width="67" height="21"/>
+                        <rect key="frame" x="25" y="21" width="80" height="21"/>
+                    </variation>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bJW-AY-3Kj">
+                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                        <rect key="frame" x="42" y="59" width="46" height="21"/>
                     </variation>
                 </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aEo-XG-Olh">
@@ -303,6 +321,33 @@
                         <rect key="frame" x="25" y="50" width="267" height="1"/>
                     </variation>
                 </view>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QTx-cX-R9Y">
+                    <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                        <rect key="frame" x="80" y="88" width="160" height="30"/>
+                    </variation>
+                </textField>
+                <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DpY-op-hrh">
+                    <rect key="frame" x="0.0" y="-162" width="320" height="162"/>
+                    <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                        <rect key="frame" x="80" y="175" width="160" height="99"/>
+                    </variation>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="ifO-UT-9CI"/>
+                        <outlet property="delegate" destination="-1" id="oOM-pb-am8"/>
+                    </connections>
+                </pickerView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Font" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8WY-AS-9Kt">
+                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                        <rect key="frame" x="42" y="161" width="35" height="21"/>
+                    </variation>
+                </label>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <color key="tintColor" red="0.10645212978124619" green="0.73670762777328491" blue="0.60660290718078613" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -313,16 +358,65 @@
             <variation key="default">
                 <mask key="subviews">
                     <exclude reference="fMJ-dR-B8L"/>
+                    <exclude reference="bJW-AY-3Kj"/>
                     <exclude reference="aEo-XG-Olh"/>
+                    <exclude reference="QTx-cX-R9Y"/>
+                    <exclude reference="DpY-op-hrh"/>
+                    <exclude reference="8WY-AS-9Kt"/>
                 </mask>
             </variation>
             <variation key="heightClass=regular-widthClass=compact">
                 <mask key="subviews">
                     <include reference="fMJ-dR-B8L"/>
+                    <include reference="bJW-AY-3Kj"/>
                     <include reference="aEo-XG-Olh"/>
+                    <include reference="QTx-cX-R9Y"/>
+                    <include reference="DpY-op-hrh"/>
+                    <include reference="8WY-AS-9Kt"/>
                 </mask>
             </variation>
             <point key="canvasLocation" x="172" y="967"/>
+        </view>
+        <view contentMode="scaleToFill" id="8xt-R9-HIF">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edit Tagline" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Db4-mB-uR2">
+                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                        <rect key="frame" x="25" y="21" width="89" height="21"/>
+                    </variation>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="apG-4A-IMD">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" red="0.1064521298" green="0.73670762779999999" blue="0.60660290719999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                        <rect key="frame" x="25" y="50" width="267" height="1"/>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <color key="tintColor" red="0.1064521298" green="0.73670762779999999" blue="0.60660290719999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="Db4-mB-uR2"/>
+                    <exclude reference="apG-4A-IMD"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="Db4-mB-uR2"/>
+                    <include reference="apG-4A-IMD"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="564" y="967"/>
         </view>
     </objects>
     <resources>

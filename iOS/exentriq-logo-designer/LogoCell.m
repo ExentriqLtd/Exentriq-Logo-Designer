@@ -22,12 +22,15 @@
     
     [self setBackgroundColor:[UIColor clearColor]];
     
+    // Init storage attribute for the original image
+    _logoImage = [[UIImage alloc] init];
+    
     // Position image
-    _logoImage = [[UIImageView alloc] initWithFrame:CGRectMake(60, 20, 100, 100)];
-    [_logoImage setBackgroundColor:[UIColor clearColor]];
+    _logoImageView = [[UIImageView alloc] initWithFrame:CGRectMake(60, 20, 100, 100)];
+    [_logoImageView setBackgroundColor:[UIColor clearColor]];
     
     [self.contentView setBackgroundColor:[UIColor clearColor]];
-    [self.contentView addSubview:_logoImage];
+    [self.contentView addSubview:_logoImageView];
     
     
     return self;
@@ -40,7 +43,10 @@
 }
 
 // Overload image setter to set default blending color whenver image is changed
-- (void)setImageForLogoImage:(UIImage *)image{
+- (void)setImageViewForLogoImage:(UIImage *)image{
+    
+    // Store original image for usage in design view
+    _logoImage = [UIImage imageWithCGImage:image.CGImage];
     
     CGRect rect = CGRectMake(0, 0, image.size.width, image.size.height);
     UIGraphicsBeginImageContext(rect.size);
@@ -51,7 +57,8 @@
     UIImage *img = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
-    [_logoImage setImage:img];
+    // Assign modified whose color was modified to the cell image
+    [_logoImageView setImage:img];
 }
 
 @end

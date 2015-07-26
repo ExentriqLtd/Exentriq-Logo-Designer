@@ -1,0 +1,13 @@
+# Uncomment this line to define a global platform for your project
+platform :ios, '7.0'
+
+target 'exentriq-logo-designer' do
+    
+    pod 'iOS-Color-Picker'
+
+end
+
+target 'exentriq-logo-designerTests' do
+
+end
+
