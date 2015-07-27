@@ -11,10 +11,12 @@ angular.module('myApp.designer', ['ngRoute'])
 
 .controller('DesignerCtrl', ['$scope', 'Symbol',
   function($scope, Symbol) {
+
     // ----------------------init canvas and its elements------------------------
+    
     var canvas = new fabric.Canvas('c');
-    canvas.setWidth(800);
-    canvas.setHeight(400);
+    canvas.setWidth($('.canvas-container').parent().width());
+    canvas.setHeight(500);
 
     $scope.symbol = new Symboll(canvas);
     $scope.text = new Text(canvas);
@@ -24,6 +26,17 @@ angular.module('myApp.designer', ['ngRoute'])
     });
 
     setCanvasListener(canvas, $scope);
+
+    // font select
+     $scope.text.fontfamilies = [
+                          { 'name': 'Open Sans', 'value': 'Open Sans'},
+                          { 'name': 'Roboto', 'value': 'Roboto'},
+                          { 'name': 'Lato', 'value': 'lato'},
+                          { 'name': 'Oswald', 'value': 'Oswald'},
+                          { 'name': 'Lora', 'value': 'Lora'}];
+
+      //Setting first option as selected in configuration select
+      $scope.text.fontfamily = $scope.text.fontfamilies[0].value;
 
     // ---------------------draw symbol in canvas-----------------------------
     $scope.setLogoSymbol = function(svgPath) {
@@ -94,7 +107,7 @@ angular.module('myApp.designer', ['ngRoute'])
 
     $scope.changeTextFontFamily = function(){
       var activeObject = canvas.getActiveObject();
-      activeObject.setFontFamily($('#textfontselect').val());
+      activeObject.setFontFamily($scope.text.fontfamily);
       canvas.renderAll();
     };
 

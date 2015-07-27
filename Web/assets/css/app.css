@@ -8,14 +8,26 @@
 .centered{
   display: block;
   margin: 0 auto;
+  text-align: center;
 }
 
+.left{
+  display: block;
+  text-align: left;
+}
 
 /* -------------------------------Sidebar-------------------------------------
 -------------------------------------------------------------------------------*/
 .sidebar{
-  background: #4A6175;
+  background: #FFF;
   min-height: 110vh;
+  margin-top: -60px;
+}
+.sidebar header{
+  padding-top: 20px;
+  text-align: center;
+  height: 60px;
+  border-bottom: 1px solid #ccc;
 }
 .sidebar li{
   display: inline-block;
@@ -23,8 +35,14 @@
   margin: 20px;
 }
 .sidebar li img{
-  width: 50px;
-  height: 50px
+  width: 30px;
+  height: 30px;
+}
+
+.symbols{
+  height: 480px;
+  overflow: auto;
+  padding: 20px;
 }
 /* -------------------------------Main-------------------------------------
 -------------------------------------------------------------------------------*/
@@ -34,26 +52,32 @@
 
 #c{
     background: url(img/background_designer.png) repeat;
-
 }
 
-#preview{
-  position: fixed;
-  bottom: -20px;
-  right: 0;
-  width: 75%;
+#save{
+  background: #1BBC9B;
+  height: 80px;
+}
+#save div{
+  float: right;
+  background: url(img/right.png);
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+  padding-right: 40px;
+  padding-top: 10px;
+  margin-right: 80px;
+}
+#save p{
+  color: #EFEFEF;
+  font-size: 16px;
+  text-align: right;
+}
+#save a{
+  color: white;
+  font-size: 18px;
+  text-align: right;
 }
 
-input{
-  margin-top: 50px !important;
-  padding: 5px;
-}
-
-button#save{
-  position: absolute;
-  bottom: 25px;
-  left: 40%;
-}
 
 #card-background{
   width: 250px;
@@ -79,10 +103,10 @@ button#save{
 }
 
 .controls{
-  background: #333;
+  background: #233447;
   padding: 20px 50px;
   color: white;
   position: absolute;
-  top: 10px;
   z-index: 10;
+  width: 100%;
 }

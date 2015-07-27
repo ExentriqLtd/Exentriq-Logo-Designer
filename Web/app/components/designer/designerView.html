@@ -1,13 +1,18 @@
 <div class="container-fluid">
 	<div class="row">
-		<div class="col-sm-3 sidebar">
+		<div class="col-sm-12 col-lg-3 sidebar">
 
-			<div class="row">
-				<input type="text" placeholder="Name" ng-model="name" ng-change="setLogoName()" class="centered">
+			<header class="row centered">
+				<img src="assets/img/logo.png" alt="exentriq logo designer" />
+			</header>
+
+			<div class="form-group">
+  			<label class="centered" for="companyName">Company name</label>
+				<input class="form-group" id="companyName" type="text" placeholder="Name" ng-model="name" ng-change="setLogoName()" class="centered">
 			</div>
 
-			<div class="row">
-				<input type="text" placeholder="Search" ng-model="query" class="centered">
+			<div class="form-group">
+				<input id="searchSymbol" class="form-group" type="text" placeholder="Search symbols" ng-model="query" class="centered">
 			</div>
 
 			<div class="row">
@@ -18,18 +23,14 @@
 	      </ul>
 	    </div>
 
-			<div class="row">
-				<input id="save" type="submit" value="Save" class="btn btn-success centered" ng-click="saveLogo()"></button>
-			</div>
-
 		</div>
 
-		<div class="col-sm-9 main">
+		<div class="col-sm-12 col-lg-9 main">
 			<div class="row">
-				<div id="controls-symbol" class="controls col-sm-10 col-sm-offset-1">
+				<div id="controls-symbol" class="controls">
 					<ng-include src="'app/components/designer/_controls-symbol.html'" scope="canvas"></ng-include>
 				</div>
-				<div id="controls-text" class="controls col-sm-10 col-sm-offset-1">
+				<div id="controls-text" class="controls">
 					<ng-include src="'app/components/designer/_controls-text.html'" scope="canvas"></ng-include>
 				</div>
 			</div>
@@ -40,6 +41,13 @@
 
 			<div id="preview" class="row">
 				<ng-include src="'app/components/designer/_preview.html'" scope="preview"></ng-include>
+			</div>
+
+			<div id="save" class="row">
+				<div>
+					<p>Next</p>
+				 	<a href="javascript:void(0)" ng-click="saveLogo()">Save and Print</a>
+				 </div>
 			</div>
 		
 	</div>

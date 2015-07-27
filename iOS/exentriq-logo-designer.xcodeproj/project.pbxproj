@@ -32,6 +32,134 @@
 		2D2AC0D21B4D74A80075106D /* LogoImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D2AC0D11B4D74A80075106D /* LogoImageView.m */; };
 		2D2AC0D51B4EA0E80075106D /* LogoLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D2AC0D41B4EA0E80075106D /* LogoLabel.m */; };
 		2D2AC0D91B4EB1530075106D /* background_pattern.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D2AC0D81B4EB1530075106D /* background_pattern.png */; };
+		2D4561AD1B6648B600A6591D /* aclonica in Resources */ = {isa = PBXBuildFile; fileRef = 2D45612D1B6648B600A6591D /* aclonica */; };
+		2D4561AE1B6648B600A6591D /* arimo in Resources */ = {isa = PBXBuildFile; fileRef = 2D45612E1B6648B600A6591D /* arimo */; };
+		2D4561AF1B6648B600A6591D /* calligraffitti in Resources */ = {isa = PBXBuildFile; fileRef = 2D45612F1B6648B600A6591D /* calligraffitti */; };
+		2D4561B01B6648B600A6591D /* cherrycreamsoda in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561301B6648B600A6591D /* cherrycreamsoda */; };
+		2D4561B11B6648B600A6591D /* chewy in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561311B6648B600A6591D /* chewy */; };
+		2D4561B21B6648B600A6591D /* comingsoon in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561321B6648B600A6591D /* comingsoon */; };
+		2D4561B31B6648B600A6591D /* cousine in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561331B6648B600A6591D /* cousine */; };
+		2D4561B41B6648B600A6591D /* craftygirls in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561341B6648B600A6591D /* craftygirls */; };
+		2D4561B51B6648B600A6591D /* creepstercaps in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561351B6648B600A6591D /* creepstercaps */; };
+		2D4561B61B6648B600A6591D /* crushed in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561361B6648B600A6591D /* crushed */; };
+		2D4561B71B6648B600A6591D /* droidarabickufi in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561371B6648B600A6591D /* droidarabickufi */; };
+		2D4561B81B6648B600A6591D /* droidarabicnaskh in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561381B6648B600A6591D /* droidarabicnaskh */; };
+		2D4561B91B6648B600A6591D /* droidsans in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561391B6648B600A6591D /* droidsans */; };
+		2D4561BA1B6648B600A6591D /* droidsansethiopic in Resources */ = {isa = PBXBuildFile; fileRef = 2D45613A1B6648B600A6591D /* droidsansethiopic */; };
+		2D4561BB1B6648B600A6591D /* droidsansjapanese in Resources */ = {isa = PBXBuildFile; fileRef = 2D45613B1B6648B600A6591D /* droidsansjapanese */; };
+		2D4561BC1B6648B600A6591D /* droidsansmono in Resources */ = {isa = PBXBuildFile; fileRef = 2D45613C1B6648B600A6591D /* droidsansmono */; };
+		2D4561BD1B6648B600A6591D /* droidsanstamil in Resources */ = {isa = PBXBuildFile; fileRef = 2D45613D1B6648B600A6591D /* droidsanstamil */; };
+		2D4561BE1B6648B600A6591D /* droidsansthai in Resources */ = {isa = PBXBuildFile; fileRef = 2D45613E1B6648B600A6591D /* droidsansthai */; };
+		2D4561BF1B6648B600A6591D /* droidserif in Resources */ = {isa = PBXBuildFile; fileRef = 2D45613F1B6648B600A6591D /* droidserif */; };
+		2D4561C01B6648B600A6591D /* droidserifthai in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561401B6648B600A6591D /* droidserifthai */; };
+		2D4561C11B6648B600A6591D /* fontdinerswanky in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561411B6648B600A6591D /* fontdinerswanky */; };
+		2D4561C21B6648B600A6591D /* homemadeapple in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561421B6648B600A6591D /* homemadeapple */; };
+		2D4561C31B6648B600A6591D /* irishgrover in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561431B6648B600A6591D /* irishgrover */; };
+		2D4561C41B6648B600A6591D /* irishgrowler in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561441B6648B600A6591D /* irishgrowler */; };
+		2D4561C51B6648B600A6591D /* jsmathcmbx10 in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561451B6648B600A6591D /* jsmathcmbx10 */; };
+		2D4561C61B6648B600A6591D /* jsmathcmex10 in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561461B6648B600A6591D /* jsmathcmex10 */; };
+		2D4561C71B6648B600A6591D /* jsmathcmmi10 in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561471B6648B600A6591D /* jsmathcmmi10 */; };
+		2D4561C81B6648B600A6591D /* jsmathcmr10 in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561481B6648B600A6591D /* jsmathcmr10 */; };
+		2D4561C91B6648B600A6591D /* jsmathcmsy10 in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561491B6648B600A6591D /* jsmathcmsy10 */; };
+		2D4561CA1B6648B600A6591D /* jsmathcmti10 in Resources */ = {isa = PBXBuildFile; fileRef = 2D45614A1B6648B600A6591D /* jsmathcmti10 */; };
+		2D4561CB1B6648B600A6591D /* justanotherhand in Resources */ = {isa = PBXBuildFile; fileRef = 2D45614B1B6648B600A6591D /* justanotherhand */; };
+		2D4561CC1B6648B600A6591D /* kranky in Resources */ = {isa = PBXBuildFile; fileRef = 2D45614C1B6648B600A6591D /* kranky */; };
+		2D4561CD1B6648B600A6591D /* luckiestguy in Resources */ = {isa = PBXBuildFile; fileRef = 2D45614D1B6648B600A6591D /* luckiestguy */; };
+		2D4561CE1B6648B600A6591D /* maidenorange in Resources */ = {isa = PBXBuildFile; fileRef = 2D45614E1B6648B600A6591D /* maidenorange */; };
+		2D4561CF1B6648B600A6591D /* montez in Resources */ = {isa = PBXBuildFile; fileRef = 2D45614F1B6648B600A6591D /* montez */; };
+		2D4561D01B6648B600A6591D /* mountainsofchristmas in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561501B6648B600A6591D /* mountainsofchristmas */; };
+		2D4561D11B6648B600A6591D /* nokora in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561511B6648B600A6591D /* nokora */; };
+		2D4561D21B6648B600A6591D /* notokufiarabic in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561521B6648B600A6591D /* notokufiarabic */; };
+		2D4561D31B6648B600A6591D /* notonaskharabic in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561531B6648B600A6591D /* notonaskharabic */; };
+		2D4561D41B6648B600A6591D /* notonastaliqurdudraft in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561541B6648B600A6591D /* notonastaliqurdudraft */; };
+		2D4561D51B6648B600A6591D /* notosans in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561551B6648B600A6591D /* notosans */; };
+		2D4561D61B6648B600A6591D /* notosansarmenian in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561561B6648B600A6591D /* notosansarmenian */; };
+		2D4561D71B6648B600A6591D /* notosansavestan in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561571B6648B600A6591D /* notosansavestan */; };
+		2D4561D81B6648B600A6591D /* notosansbengali in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561581B6648B600A6591D /* notosansbengali */; };
+		2D4561D91B6648B600A6591D /* notosansbrahmi in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561591B6648B600A6591D /* notosansbrahmi */; };
+		2D4561DA1B6648B600A6591D /* notosanscarian in Resources */ = {isa = PBXBuildFile; fileRef = 2D45615A1B6648B600A6591D /* notosanscarian */; };
+		2D4561DB1B6648B600A6591D /* notosanscham in Resources */ = {isa = PBXBuildFile; fileRef = 2D45615B1B6648B600A6591D /* notosanscham */; };
+		2D4561DC1B6648B600A6591D /* notosanscherokee in Resources */ = {isa = PBXBuildFile; fileRef = 2D45615C1B6648B600A6591D /* notosanscherokee */; };
+		2D4561DD1B6648B600A6591D /* notosanscoptic in Resources */ = {isa = PBXBuildFile; fileRef = 2D45615D1B6648B600A6591D /* notosanscoptic */; };
+		2D4561DE1B6648B600A6591D /* notosanscypriotsyllabary in Resources */ = {isa = PBXBuildFile; fileRef = 2D45615E1B6648B600A6591D /* notosanscypriotsyllabary */; };
+		2D4561DF1B6648B600A6591D /* notosansdeseret in Resources */ = {isa = PBXBuildFile; fileRef = 2D45615F1B6648B600A6591D /* notosansdeseret */; };
+		2D4561E01B6648B600A6591D /* notosansdevanagari in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561601B6648B600A6591D /* notosansdevanagari */; };
+		2D4561E11B6648B600A6591D /* notosansdevanagariui in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561611B6648B600A6591D /* notosansdevanagariui */; };
+		2D4561E21B6648B600A6591D /* notosansegyptianhieroglyphs in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561621B6648B600A6591D /* notosansegyptianhieroglyphs */; };
+		2D4561E31B6648B600A6591D /* notosansethiopic in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561631B6648B600A6591D /* notosansethiopic */; };
+		2D4561E41B6648B600A6591D /* notosansgeorgian in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561641B6648B600A6591D /* notosansgeorgian */; };
+		2D4561E51B6648B600A6591D /* notosansglagolitic in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561651B6648B600A6591D /* notosansglagolitic */; };
+		2D4561E61B6648B600A6591D /* notosansgujarati in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561661B6648B600A6591D /* notosansgujarati */; };
+		2D4561E71B6648B600A6591D /* notosansgujaratiui in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561671B6648B600A6591D /* notosansgujaratiui */; };
+		2D4561E81B6648B600A6591D /* notosansgurmukhi in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561681B6648B600A6591D /* notosansgurmukhi */; };
+		2D4561E91B6648B600A6591D /* notosanshanunoo in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561691B6648B600A6591D /* notosanshanunoo */; };
+		2D4561EA1B6648B600A6591D /* notosanshebrew in Resources */ = {isa = PBXBuildFile; fileRef = 2D45616A1B6648B600A6591D /* notosanshebrew */; };
+		2D4561EB1B6648B600A6591D /* notosansimperilaramaic in Resources */ = {isa = PBXBuildFile; fileRef = 2D45616B1B6648B600A6591D /* notosansimperilaramaic */; };
+		2D4561EC1B6648B600A6591D /* notosanskaithi in Resources */ = {isa = PBXBuildFile; fileRef = 2D45616C1B6648B600A6591D /* notosanskaithi */; };
+		2D4561ED1B6648B600A6591D /* notosanskannada in Resources */ = {isa = PBXBuildFile; fileRef = 2D45616D1B6648B600A6591D /* notosanskannada */; };
+		2D4561EE1B6648B600A6591D /* notosanskayahli in Resources */ = {isa = PBXBuildFile; fileRef = 2D45616E1B6648B600A6591D /* notosanskayahli */; };
+		2D4561EF1B6648B600A6591D /* notosanskharoshthi in Resources */ = {isa = PBXBuildFile; fileRef = 2D45616F1B6648B600A6591D /* notosanskharoshthi */; };
+		2D4561F01B6648B600A6591D /* notosanskhmer in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561701B6648B600A6591D /* notosanskhmer */; };
+		2D4561F11B6648B600A6591D /* notosanskufiarabic in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561711B6648B600A6591D /* notosanskufiarabic */; };
+		2D4561F21B6648B600A6591D /* notosanslao in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561721B6648B600A6591D /* notosanslao */; };
+		2D4561F31B6648B600A6591D /* notosanslaoui in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561731B6648B600A6591D /* notosanslaoui */; };
+		2D4561F41B6648B600A6591D /* notosanslisu in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561741B6648B600A6591D /* notosanslisu */; };
+		2D4561F51B6648B600A6591D /* notosanslycian in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561751B6648B600A6591D /* notosanslycian */; };
+		2D4561F61B6648B600A6591D /* notosanslydian in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561761B6648B600A6591D /* notosanslydian */; };
+		2D4561F71B6648B600A6591D /* notosansmalayalam in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561771B6648B600A6591D /* notosansmalayalam */; };
+		2D4561F81B6648B600A6591D /* notosansmandaic in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561781B6648B600A6591D /* notosansmandaic */; };
+		2D4561F91B6648B600A6591D /* notosansmeeteimayek in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561791B6648B600A6591D /* notosansmeeteimayek */; };
+		2D4561FA1B6648B600A6591D /* notosansmyanmar in Resources */ = {isa = PBXBuildFile; fileRef = 2D45617A1B6648B600A6591D /* notosansmyanmar */; };
+		2D4561FB1B6648B600A6591D /* notosansnko in Resources */ = {isa = PBXBuildFile; fileRef = 2D45617B1B6648B600A6591D /* notosansnko */; };
+		2D4561FC1B6648B600A6591D /* notosansoldsoutharabian in Resources */ = {isa = PBXBuildFile; fileRef = 2D45617C1B6648B600A6591D /* notosansoldsoutharabian */; };
+		2D4561FD1B6648B600A6591D /* notosansoldturkic in Resources */ = {isa = PBXBuildFile; fileRef = 2D45617D1B6648B600A6591D /* notosansoldturkic */; };
+		2D4561FE1B6648B600A6591D /* notosansosmanya in Resources */ = {isa = PBXBuildFile; fileRef = 2D45617E1B6648B600A6591D /* notosansosmanya */; };
+		2D4561FF1B6648B600A6591D /* notosansphoenician in Resources */ = {isa = PBXBuildFile; fileRef = 2D45617F1B6648B600A6591D /* notosansphoenician */; };
+		2D4562001B6648B600A6591D /* notosansshavian in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561801B6648B600A6591D /* notosansshavian */; };
+		2D4562011B6648B600A6591D /* notosanssinhala in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561811B6648B600A6591D /* notosanssinhala */; };
+		2D4562021B6648B600A6591D /* notosanssymbols in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561821B6648B600A6591D /* notosanssymbols */; };
+		2D4562031B6648B600A6591D /* notosanstagalog in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561831B6648B600A6591D /* notosanstagalog */; };
+		2D4562041B6648B600A6591D /* notosanstaitham in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561841B6648B600A6591D /* notosanstaitham */; };
+		2D4562051B6648B600A6591D /* notosanstaiviet in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561851B6648B600A6591D /* notosanstaiviet */; };
+		2D4562061B6648B600A6591D /* notosanstamil in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561861B6648B600A6591D /* notosanstamil */; };
+		2D4562071B6648B600A6591D /* notosanstamilui in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561871B6648B600A6591D /* notosanstamilui */; };
+		2D4562081B6648B600A6591D /* notosanstelugu in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561881B6648B600A6591D /* notosanstelugu */; };
+		2D4562091B6648B600A6591D /* notosansthai in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561891B6648B600A6591D /* notosansthai */; };
+		2D45620A1B6648B600A6591D /* notosansthaiui in Resources */ = {isa = PBXBuildFile; fileRef = 2D45618A1B6648B600A6591D /* notosansthaiui */; };
+		2D45620B1B6648B600A6591D /* notosansugaritic in Resources */ = {isa = PBXBuildFile; fileRef = 2D45618B1B6648B600A6591D /* notosansugaritic */; };
+		2D45620C1B6648B600A6591D /* notosansui in Resources */ = {isa = PBXBuildFile; fileRef = 2D45618C1B6648B600A6591D /* notosansui */; };
+		2D45620D1B6648B600A6591D /* notosansvai in Resources */ = {isa = PBXBuildFile; fileRef = 2D45618D1B6648B600A6591D /* notosansvai */; };
+		2D45620E1B6648B600A6591D /* notoserif in Resources */ = {isa = PBXBuildFile; fileRef = 2D45618E1B6648B600A6591D /* notoserif */; };
+		2D45620F1B6648B600A6591D /* notoserifarmenian in Resources */ = {isa = PBXBuildFile; fileRef = 2D45618F1B6648B600A6591D /* notoserifarmenian */; };
+		2D4562101B6648B600A6591D /* notoserifgeorgian in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561901B6648B600A6591D /* notoserifgeorgian */; };
+		2D4562111B6648B600A6591D /* notoserifkhmer in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561911B6648B600A6591D /* notoserifkhmer */; };
+		2D4562121B6648B600A6591D /* notoseriflao in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561921B6648B600A6591D /* notoseriflao */; };
+		2D4562131B6648B600A6591D /* notoserifthai in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561931B6648B600A6591D /* notoserifthai */; };
+		2D4562141B6648B600A6591D /* opensans in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561941B6648B600A6591D /* opensans */; };
+		2D4562151B6648B600A6591D /* opensanscondensed in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561951B6648B600A6591D /* opensanscondensed */; };
+		2D4562161B6648B600A6591D /* opensanshebrew in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561961B6648B600A6591D /* opensanshebrew */; };
+		2D4562171B6648B600A6591D /* opensanshebrewcondensed in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561971B6648B600A6591D /* opensanshebrewcondensed */; };
+		2D4562181B6648B600A6591D /* permanentmarker in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561981B6648B600A6591D /* permanentmarker */; };
+		2D4562191B6648B600A6591D /* rancho in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561991B6648B600A6591D /* rancho */; };
+		2D45621A1B6648B600A6591D /* redressed in Resources */ = {isa = PBXBuildFile; fileRef = 2D45619A1B6648B600A6591D /* redressed */; };
+		2D45621B1B6648B600A6591D /* roboto in Resources */ = {isa = PBXBuildFile; fileRef = 2D45619B1B6648B600A6591D /* roboto */; };
+		2D45621C1B6648B600A6591D /* robotocondensed in Resources */ = {isa = PBXBuildFile; fileRef = 2D45619C1B6648B600A6591D /* robotocondensed */; };
+		2D45621D1B6648B600A6591D /* robotomono in Resources */ = {isa = PBXBuildFile; fileRef = 2D45619D1B6648B600A6591D /* robotomono */; };
+		2D45621E1B6648B600A6591D /* robotoslab in Resources */ = {isa = PBXBuildFile; fileRef = 2D45619E1B6648B600A6591D /* robotoslab */; };
+		2D45621F1B6648B600A6591D /* rochester in Resources */ = {isa = PBXBuildFile; fileRef = 2D45619F1B6648B600A6591D /* rochester */; };
+		2D4562201B6648B600A6591D /* rocksalt in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561A01B6648B600A6591D /* rocksalt */; };
+		2D4562211B6648B600A6591D /* satisfy in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561A11B6648B600A6591D /* satisfy */; };
+		2D4562221B6648B600A6591D /* schoolbell in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561A21B6648B600A6591D /* schoolbell */; };
+		2D4562231B6648B600A6591D /* slackey in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561A31B6648B600A6591D /* slackey */; };
+		2D4562241B6648B600A6591D /* smokum in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561A41B6648B600A6591D /* smokum */; };
+		2D4562251B6648B600A6591D /* specialelite in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561A51B6648B600A6591D /* specialelite */; };
+		2D4562261B6648B600A6591D /* sunshiney in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561A61B6648B600A6591D /* sunshiney */; };
+		2D4562271B6648B600A6591D /* syncopate in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561A71B6648B600A6591D /* syncopate */; };
+		2D4562281B6648B600A6591D /* tinos in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561A81B6648B600A6591D /* tinos */; };
+		2D4562291B6648B600A6591D /* ultra in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561A91B6648B600A6591D /* ultra */; };
+		2D45622A1B6648B600A6591D /* unkempt in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561AA1B6648B600A6591D /* unkempt */; };
+		2D45622B1B6648B600A6591D /* walterturncoat in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561AB1B6648B600A6591D /* walterturncoat */; };
+		2D45622C1B6648B600A6591D /* yellowtail in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561AC1B6648B600A6591D /* yellowtail */; };
 		950CD928611EFCF2165611F8 /* libPods-exentriq-logo-designer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C3FDDD8258B6361388C40586 /* libPods-exentriq-logo-designer.a */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +212,134 @@
 		2D2AC0D31B4EA0E80075106D /* LogoLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogoLabel.h; sourceTree = "<group>"; };
 		2D2AC0D41B4EA0E80075106D /* LogoLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogoLabel.m; sourceTree = "<group>"; };
 		2D2AC0D81B4EB1530075106D /* background_pattern.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background_pattern.png; sourceTree = "<group>"; };
+		2D45612D1B6648B600A6591D /* aclonica */ = {isa = PBXFileReference; lastKnownFileType = folder; path = aclonica; sourceTree = "<group>"; };
+		2D45612E1B6648B600A6591D /* arimo */ = {isa = PBXFileReference; lastKnownFileType = folder; path = arimo; sourceTree = "<group>"; };
+		2D45612F1B6648B600A6591D /* calligraffitti */ = {isa = PBXFileReference; lastKnownFileType = folder; path = calligraffitti; sourceTree = "<group>"; };
+		2D4561301B6648B600A6591D /* cherrycreamsoda */ = {isa = PBXFileReference; lastKnownFileType = folder; path = cherrycreamsoda; sourceTree = "<group>"; };
+		2D4561311B6648B600A6591D /* chewy */ = {isa = PBXFileReference; lastKnownFileType = folder; path = chewy; sourceTree = "<group>"; };
+		2D4561321B6648B600A6591D /* comingsoon */ = {isa = PBXFileReference; lastKnownFileType = folder; path = comingsoon; sourceTree = "<group>"; };
+		2D4561331B6648B600A6591D /* cousine */ = {isa = PBXFileReference; lastKnownFileType = folder; path = cousine; sourceTree = "<group>"; };
+		2D4561341B6648B600A6591D /* craftygirls */ = {isa = PBXFileReference; lastKnownFileType = folder; path = craftygirls; sourceTree = "<group>"; };
+		2D4561351B6648B600A6591D /* creepstercaps */ = {isa = PBXFileReference; lastKnownFileType = folder; path = creepstercaps; sourceTree = "<group>"; };
+		2D4561361B6648B600A6591D /* crushed */ = {isa = PBXFileReference; lastKnownFileType = folder; path = crushed; sourceTree = "<group>"; };
+		2D4561371B6648B600A6591D /* droidarabickufi */ = {isa = PBXFileReference; lastKnownFileType = folder; path = droidarabickufi; sourceTree = "<group>"; };
+		2D4561381B6648B600A6591D /* droidarabicnaskh */ = {isa = PBXFileReference; lastKnownFileType = folder; path = droidarabicnaskh; sourceTree = "<group>"; };
+		2D4561391B6648B600A6591D /* droidsans */ = {isa = PBXFileReference; lastKnownFileType = folder; path = droidsans; sourceTree = "<group>"; };
+		2D45613A1B6648B600A6591D /* droidsansethiopic */ = {isa = PBXFileReference; lastKnownFileType = folder; path = droidsansethiopic; sourceTree = "<group>"; };
+		2D45613B1B6648B600A6591D /* droidsansjapanese */ = {isa = PBXFileReference; lastKnownFileType = folder; path = droidsansjapanese; sourceTree = "<group>"; };
+		2D45613C1B6648B600A6591D /* droidsansmono */ = {isa = PBXFileReference; lastKnownFileType = folder; path = droidsansmono; sourceTree = "<group>"; };
+		2D45613D1B6648B600A6591D /* droidsanstamil */ = {isa = PBXFileReference; lastKnownFileType = folder; path = droidsanstamil; sourceTree = "<group>"; };
+		2D45613E1B6648B600A6591D /* droidsansthai */ = {isa = PBXFileReference; lastKnownFileType = folder; path = droidsansthai; sourceTree = "<group>"; };
+		2D45613F1B6648B600A6591D /* droidserif */ = {isa = PBXFileReference; lastKnownFileType = folder; path = droidserif; sourceTree = "<group>"; };
+		2D4561401B6648B600A6591D /* droidserifthai */ = {isa = PBXFileReference; lastKnownFileType = folder; path = droidserifthai; sourceTree = "<group>"; };
+		2D4561411B6648B600A6591D /* fontdinerswanky */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fontdinerswanky; sourceTree = "<group>"; };
+		2D4561421B6648B600A6591D /* homemadeapple */ = {isa = PBXFileReference; lastKnownFileType = folder; path = homemadeapple; sourceTree = "<group>"; };
+		2D4561431B6648B600A6591D /* irishgrover */ = {isa = PBXFileReference; lastKnownFileType = folder; path = irishgrover; sourceTree = "<group>"; };
+		2D4561441B6648B600A6591D /* irishgrowler */ = {isa = PBXFileReference; lastKnownFileType = folder; path = irishgrowler; sourceTree = "<group>"; };
+		2D4561451B6648B600A6591D /* jsmathcmbx10 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = jsmathcmbx10; sourceTree = "<group>"; };
+		2D4561461B6648B600A6591D /* jsmathcmex10 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = jsmathcmex10; sourceTree = "<group>"; };
+		2D4561471B6648B600A6591D /* jsmathcmmi10 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = jsmathcmmi10; sourceTree = "<group>"; };
+		2D4561481B6648B600A6591D /* jsmathcmr10 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = jsmathcmr10; sourceTree = "<group>"; };
+		2D4561491B6648B600A6591D /* jsmathcmsy10 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = jsmathcmsy10; sourceTree = "<group>"; };
+		2D45614A1B6648B600A6591D /* jsmathcmti10 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = jsmathcmti10; sourceTree = "<group>"; };
+		2D45614B1B6648B600A6591D /* justanotherhand */ = {isa = PBXFileReference; lastKnownFileType = folder; path = justanotherhand; sourceTree = "<group>"; };
+		2D45614C1B6648B600A6591D /* kranky */ = {isa = PBXFileReference; lastKnownFileType = folder; path = kranky; sourceTree = "<group>"; };
+		2D45614D1B6648B600A6591D /* luckiestguy */ = {isa = PBXFileReference; lastKnownFileType = folder; path = luckiestguy; sourceTree = "<group>"; };
+		2D45614E1B6648B600A6591D /* maidenorange */ = {isa = PBXFileReference; lastKnownFileType = folder; path = maidenorange; sourceTree = "<group>"; };
+		2D45614F1B6648B600A6591D /* montez */ = {isa = PBXFileReference; lastKnownFileType = folder; path = montez; sourceTree = "<group>"; };
+		2D4561501B6648B600A6591D /* mountainsofchristmas */ = {isa = PBXFileReference; lastKnownFileType = folder; path = mountainsofchristmas; sourceTree = "<group>"; };
+		2D4561511B6648B600A6591D /* nokora */ = {isa = PBXFileReference; lastKnownFileType = folder; path = nokora; sourceTree = "<group>"; };
+		2D4561521B6648B600A6591D /* notokufiarabic */ = {isa = PBXFileReference; lastKnownFileType = folder; path = notokufiarabic; sourceTree = "<group>"; };
+		2D4561531B6648B600A6591D /* notonaskharabic */ = {isa = PBXFileReference; lastKnownFileType = folder; path = notonaskharabic; sourceTree = "<group>"; };
+		2D4561541B6648B600A6591D /* notonastaliqurdudraft */ = {isa = PBXFileReference; lastKnownFileType = folder; path = notonastaliqurdudraft; sourceTree = "<group>"; };
+		2D4561551B6648B600A6591D /* notosans */ = {isa = PBXFileReference; lastKnownFileType = folder; path = notosans; sourceTree = "<group>"; };
+		2D4561561B6648B600A6591D /* notosansarmenian */ = {isa = PBXFileReference; lastKnownFileType = folder; path = notosansarmenian; sourceTree = "<group>"; };
+		2D4561571B6648B600A6591D /* notosansavestan */ = {isa = PBXFileReference; lastKnownFileType = folder; path = notosansavestan; sourceTree = "<group>"; };
+		2D4561581B6648B600A6591D /* notosansbengali */ = {isa = PBXFileReference; lastKnownFileType = folder; path = notosansbengali; sourceTree = "<group>"; };
+		2D4561591B6648B600A6591D /* notosansbrahmi */ = {isa = PBXFileReference; lastKnownFileType = folder; path = notosansbrahmi; sourceTree = "<group>"; };
+		2D45615A1B6648B600A6591D /* notosanscarian */ = {isa = PBXFileReference; lastKnownFileType = folder; path = notosanscarian; sourceTree = "<group>"; };
+		2D45615B1B6648B600A6591D /* notosanscham */ = {isa = PBXFileReference; lastKnownFileType = folder; path = notosanscham; sourceTree = "<group>"; };
+		2D45615C1B6648B600A6591D /* notosanscherokee */ = {isa = PBXFileReference; lastKnownFileType = folder; path = notosanscherokee; sourceTree = "<group>"; };
+		2D45615D1B6648B600A6591D /* notosanscoptic */ = {isa = PBXFileReference; lastKnownFileType = folder; path = notosanscoptic; sourceTree = "<group>"; };
+		2D45615E1B6648B600A6591D /* notosanscypriotsyllabary */ = {isa = PBXFileReference; lastKnownFileType = folder; path = notosanscypriotsyllabary; sourceTree = "<group>"; };
+		2D45615F1B6648B600A6591D /* notosansdeseret */ = {isa = PBXFileReference; lastKnownFileType = folder; path = notosansdeseret; sourceTree = "<group>"; };
+		2D4561601B6648B600A6591D /* notosansdevanagari */ = {isa = PBXFileReference; lastKnownFileType = folder; path = notosansdevanagari; sourceTree = "<group>"; };
+		2D4561611B6648B600A6591D /* notosansdevanagariui */ = {isa = PBXFileReference; lastKnownFileType = folder; path = notosansdevanagariui; sourceTree = "<group>"; };
+		2D4561621B6648B600A6591D /* notosansegyptianhieroglyphs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = notosansegyptianhieroglyphs; sourceTree = "<group>"; };
+		2D4561631B6648B600A6591D /* notosansethiopic */ = {isa = PBXFileReference; lastKnownFileType = folder; path = notosansethiopic; sourceTree = "<group>"; };
+		2D4561641B6648B600A6591D /* notosansgeorgian */ = {isa = PBXFileReference; lastKnownFileType = folder; path = notosansgeorgian; sourceTree = "<group>"; };
+		2D4561651B6648B600A6591D /* notosansglagolitic */ = {isa = PBXFileReference; lastKnownFileType = folder; path = notosansglagolitic; sourceTree = "<group>"; };
+		2D4561661B6648B600A6591D /* notosansgujarati */ = {isa = PBXFileReference; lastKnownFileType = folder; path = notosansgujarati; sourceTree = "<group>"; };
+		2D4561671B6648B600A6591D /* notosansgujaratiui */ = {isa = PBXFileReference; lastKnownFileType = folder; path = notosansgujaratiui; sourceTree = "<group>"; };
+		2D4561681B6648B600A6591D /* notosansgurmukhi */ = {isa = PBXFileReference; lastKnownFileType = folder; path = notosansgurmukhi; sourceTree = "<group>"; };
+		2D4561691B6648B600A6591D /* notosanshanunoo */ = {isa = PBXFileReference; lastKnownFileType = folder; path = notosanshanunoo; sourceTree = "<group>"; };
+		2D45616A1B6648B600A6591D /* notosanshebrew */ = {isa = PBXFileReference; lastKnownFileType = folder; path = notosanshebrew; sourceTree = "<group>"; };
+		2D45616B1B6648B600A6591D /* notosansimperilaramaic */ = {isa = PBXFileReference; lastKnownFileType = folder; path = notosansimperilaramaic; sourceTree = "<group>"; };
+		2D45616C1B6648B600A6591D /* notosanskaithi */ = {isa = PBXFileReference; lastKnownFileType = folder; path = notosanskaithi; sourceTree = "<group>"; };
+		2D45616D1B6648B600A6591D /* notosanskannada */ = {isa = PBXFileReference; lastKnownFileType = folder; path = notosanskannada; sourceTree = "<group>"; };
+		2D45616E1B6648B600A6591D /* notosanskayahli */ = {isa = PBXFileReference; lastKnownFileType = folder; path = notosanskayahli; sourceTree = "<group>"; };
+		2D45616F1B6648B600A6591D /* notosanskharoshthi */ = {isa = PBXFileReference; lastKnownFileType = folder; path = notosanskharoshthi; sourceTree = "<group>"; };
+		2D4561701B6648B600A6591D /* notosanskhmer */ = {isa = PBXFileReference; lastKnownFileType = folder; path = notosanskhmer; sourceTree = "<group>"; };
+		2D4561711B6648B600A6591D /* notosanskufiarabic */ = {isa = PBXFileReference; lastKnownFileType = folder; path = notosanskufiarabic; sourceTree = "<group>"; };
+		2D4561721B6648B600A6591D /* notosanslao */ = {isa = PBXFileReference; lastKnownFileType = folder; path = notosanslao; sourceTree = "<group>"; };
+		2D4561731B6648B600A6591D /* notosanslaoui */ = {isa = PBXFileReference; lastKnownFileType = folder; path = notosanslaoui; sourceTree = "<group>"; };
+		2D4561741B6648B600A6591D /* notosanslisu */ = {isa = PBXFileReference; lastKnownFileType = folder; path = notosanslisu; sourceTree = "<group>"; };
+		2D4561751B6648B600A6591D /* notosanslycian */ = {isa = PBXFileReference; lastKnownFileType = folder; path = notosanslycian; sourceTree = "<group>"; };
+		2D4561761B6648B600A6591D /* notosanslydian */ = {isa = PBXFileReference; lastKnownFileType = folder; path = notosanslydian; sourceTree = "<group>"; };
+		2D4561771B6648B600A6591D /* notosansmalayalam */ = {isa = PBXFileReference; lastKnownFileType = folder; path = notosansmalayalam; sourceTree = "<group>"; };
+		2D4561781B6648B600A6591D /* notosansmandaic */ = {isa = PBXFileReference; lastKnownFileType = folder; path = notosansmandaic; sourceTree = "<group>"; };
+		2D4561791B6648B600A6591D /* notosansmeeteimayek */ = {isa = PBXFileReference; lastKnownFileType = folder; path = notosansmeeteimayek; sourceTree = "<group>"; };
+		2D45617A1B6648B600A6591D /* notosansmyanmar */ = {isa = PBXFileReference; lastKnownFileType = folder; path = notosansmyanmar; sourceTree = "<group>"; };
+		2D45617B1B6648B600A6591D /* notosansnko */ = {isa = PBXFileReference; lastKnownFileType = folder; path = notosansnko; sourceTree = "<group>"; };
+		2D45617C1B6648B600A6591D /* notosansoldsoutharabian */ = {isa = PBXFileReference; lastKnownFileType = folder; path = notosansoldsoutharabian; sourceTree = "<group>"; };
+		2D45617D1B6648B600A6591D /* notosansoldturkic */ = {isa = PBXFileReference; lastKnownFileType = folder; path = notosansoldturkic; sourceTree = "<group>"; };
+		2D45617E1B6648B600A6591D /* notosansosmanya */ = {isa = PBXFileReference; lastKnownFileType = folder; path = notosansosmanya; sourceTree = "<group>"; };
+		2D45617F1B6648B600A6591D /* notosansphoenician */ = {isa = PBXFileReference; lastKnownFileType = folder; path = notosansphoenician; sourceTree = "<group>"; };
+		2D4561801B6648B600A6591D /* notosansshavian */ = {isa = PBXFileReference; lastKnownFileType = folder; path = notosansshavian; sourceTree = "<group>"; };
+		2D4561811B6648B600A6591D /* notosanssinhala */ = {isa = PBXFileReference; lastKnownFileType = folder; path = notosanssinhala; sourceTree = "<group>"; };
+		2D4561821B6648B600A6591D /* notosanssymbols */ = {isa = PBXFileReference; lastKnownFileType = folder; path = notosanssymbols; sourceTree = "<group>"; };
+		2D4561831B6648B600A6591D /* notosanstagalog */ = {isa = PBXFileReference; lastKnownFileType = folder; path = notosanstagalog; sourceTree = "<group>"; };
+		2D4561841B6648B600A6591D /* notosanstaitham */ = {isa = PBXFileReference; lastKnownFileType = folder; path = notosanstaitham; sourceTree = "<group>"; };
+		2D4561851B6648B600A6591D /* notosanstaiviet */ = {isa = PBXFileReference; lastKnownFileType = folder; path = notosanstaiviet; sourceTree = "<group>"; };
+		2D4561861B6648B600A6591D /* notosanstamil */ = {isa = PBXFileReference; lastKnownFileType = folder; path = notosanstamil; sourceTree = "<group>"; };
+		2D4561871B6648B600A6591D /* notosanstamilui */ = {isa = PBXFileReference; lastKnownFileType = folder; path = notosanstamilui; sourceTree = "<group>"; };
+		2D4561881B6648B600A6591D /* notosanstelugu */ = {isa = PBXFileReference; lastKnownFileType = folder; path = notosanstelugu; sourceTree = "<group>"; };
+		2D4561891B6648B600A6591D /* notosansthai */ = {isa = PBXFileReference; lastKnownFileType = folder; path = notosansthai; sourceTree = "<group>"; };
+		2D45618A1B6648B600A6591D /* notosansthaiui */ = {isa = PBXFileReference; lastKnownFileType = folder; path = notosansthaiui; sourceTree = "<group>"; };
+		2D45618B1B6648B600A6591D /* notosansugaritic */ = {isa = PBXFileReference; lastKnownFileType = folder; path = notosansugaritic; sourceTree = "<group>"; };
+		2D45618C1B6648B600A6591D /* notosansui */ = {isa = PBXFileReference; lastKnownFileType = folder; path = notosansui; sourceTree = "<group>"; };
+		2D45618D1B6648B600A6591D /* notosansvai */ = {isa = PBXFileReference; lastKnownFileType = folder; path = notosansvai; sourceTree = "<group>"; };
+		2D45618E1B6648B600A6591D /* notoserif */ = {isa = PBXFileReference; lastKnownFileType = folder; path = notoserif; sourceTree = "<group>"; };
+		2D45618F1B6648B600A6591D /* notoserifarmenian */ = {isa = PBXFileReference; lastKnownFileType = folder; path = notoserifarmenian; sourceTree = "<group>"; };
+		2D4561901B6648B600A6591D /* notoserifgeorgian */ = {isa = PBXFileReference; lastKnownFileType = folder; path = notoserifgeorgian; sourceTree = "<group>"; };
+		2D4561911B6648B600A6591D /* notoserifkhmer */ = {isa = PBXFileReference; lastKnownFileType = folder; path = notoserifkhmer; sourceTree = "<group>"; };
+		2D4561921B6648B600A6591D /* notoseriflao */ = {isa = PBXFileReference; lastKnownFileType = folder; path = notoseriflao; sourceTree = "<group>"; };
+		2D4561931B6648B600A6591D /* notoserifthai */ = {isa = PBXFileReference; lastKnownFileType = folder; path = notoserifthai; sourceTree = "<group>"; };
+		2D4561941B6648B600A6591D /* opensans */ = {isa = PBXFileReference; lastKnownFileType = folder; path = opensans; sourceTree = "<group>"; };
+		2D4561951B6648B600A6591D /* opensanscondensed */ = {isa = PBXFileReference; lastKnownFileType = folder; path = opensanscondensed; sourceTree = "<group>"; };
+		2D4561961B6648B600A6591D /* opensanshebrew */ = {isa = PBXFileReference; lastKnownFileType = folder; path = opensanshebrew; sourceTree = "<group>"; };
+		2D4561971B6648B600A6591D /* opensanshebrewcondensed */ = {isa = PBXFileReference; lastKnownFileType = folder; path = opensanshebrewcondensed; sourceTree = "<group>"; };
+		2D4561981B6648B600A6591D /* permanentmarker */ = {isa = PBXFileReference; lastKnownFileType = folder; path = permanentmarker; sourceTree = "<group>"; };
+		2D4561991B6648B600A6591D /* rancho */ = {isa = PBXFileReference; lastKnownFileType = folder; path = rancho; sourceTree = "<group>"; };
+		2D45619A1B6648B600A6591D /* redressed */ = {isa = PBXFileReference; lastKnownFileType = folder; path = redressed; sourceTree = "<group>"; };
+		2D45619B1B6648B600A6591D /* roboto */ = {isa = PBXFileReference; lastKnownFileType = folder; path = roboto; sourceTree = "<group>"; };
+		2D45619C1B6648B600A6591D /* robotocondensed */ = {isa = PBXFileReference; lastKnownFileType = folder; path = robotocondensed; sourceTree = "<group>"; };
+		2D45619D1B6648B600A6591D /* robotomono */ = {isa = PBXFileReference; lastKnownFileType = folder; path = robotomono; sourceTree = "<group>"; };
+		2D45619E1B6648B600A6591D /* robotoslab */ = {isa = PBXFileReference; lastKnownFileType = folder; path = robotoslab; sourceTree = "<group>"; };
+		2D45619F1B6648B600A6591D /* rochester */ = {isa = PBXFileReference; lastKnownFileType = folder; path = rochester; sourceTree = "<group>"; };
+		2D4561A01B6648B600A6591D /* rocksalt */ = {isa = PBXFileReference; lastKnownFileType = folder; path = rocksalt; sourceTree = "<group>"; };
+		2D4561A11B6648B600A6591D /* satisfy */ = {isa = PBXFileReference; lastKnownFileType = folder; path = satisfy; sourceTree = "<group>"; };
+		2D4561A21B6648B600A6591D /* schoolbell */ = {isa = PBXFileReference; lastKnownFileType = folder; path = schoolbell; sourceTree = "<group>"; };
+		2D4561A31B6648B600A6591D /* slackey */ = {isa = PBXFileReference; lastKnownFileType = folder; path = slackey; sourceTree = "<group>"; };
+		2D4561A41B6648B600A6591D /* smokum */ = {isa = PBXFileReference; lastKnownFileType = folder; path = smokum; sourceTree = "<group>"; };
+		2D4561A51B6648B600A6591D /* specialelite */ = {isa = PBXFileReference; lastKnownFileType = folder; path = specialelite; sourceTree = "<group>"; };
+		2D4561A61B6648B600A6591D /* sunshiney */ = {isa = PBXFileReference; lastKnownFileType = folder; path = sunshiney; sourceTree = "<group>"; };
+		2D4561A71B6648B600A6591D /* syncopate */ = {isa = PBXFileReference; lastKnownFileType = folder; path = syncopate; sourceTree = "<group>"; };
+		2D4561A81B6648B600A6591D /* tinos */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tinos; sourceTree = "<group>"; };
+		2D4561A91B6648B600A6591D /* ultra */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ultra; sourceTree = "<group>"; };
+		2D4561AA1B6648B600A6591D /* unkempt */ = {isa = PBXFileReference; lastKnownFileType = folder; path = unkempt; sourceTree = "<group>"; };
+		2D4561AB1B6648B600A6591D /* walterturncoat */ = {isa = PBXFileReference; lastKnownFileType = folder; path = walterturncoat; sourceTree = "<group>"; };
+		2D4561AC1B6648B600A6591D /* yellowtail */ = {isa = PBXFileReference; lastKnownFileType = folder; path = yellowtail; sourceTree = "<group>"; };
 		77219908306B42B0A05C7BE8 /* Pods-exentriq-logo-designer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-exentriq-logo-designer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-exentriq-logo-designer/Pods-exentriq-logo-designer.debug.xcconfig"; sourceTree = "<group>"; };
 		7E7DDBA3FB6239483561DB86 /* Pods-exentriq-logo-designer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-exentriq-logo-designer.release.xcconfig"; path = "Pods/Target Support Files/Pods-exentriq-logo-designer/Pods-exentriq-logo-designer.release.xcconfig"; sourceTree = "<group>"; };
 		C3FDDD8258B6361388C40586 /* libPods-exentriq-logo-designer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-exentriq-logo-designer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -208,6 +464,7 @@
 		2D2AC0C51B4D6DBA0075106D /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				2D45612C1B663E5600A6591D /* Fonts */,
 				2D2AC0D81B4EB1530075106D /* background_pattern.png */,
 				2D2AC0C61B4D6DF30075106D /* logo_1.png */,
 				2D2AC0C71B4D6DF30075106D /* logo_2.png */,
@@ -216,6 +473,141 @@
 				2D2AC0CA1B4D6DF30075106D /* logo_5.png */,
 			);
 			name = Assets;
+			sourceTree = "<group>";
+		};
+		2D45612C1B663E5600A6591D /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				2D45612D1B6648B600A6591D /* aclonica */,
+				2D45612E1B6648B600A6591D /* arimo */,
+				2D45612F1B6648B600A6591D /* calligraffitti */,
+				2D4561301B6648B600A6591D /* cherrycreamsoda */,
+				2D4561311B6648B600A6591D /* chewy */,
+				2D4561321B6648B600A6591D /* comingsoon */,
+				2D4561331B6648B600A6591D /* cousine */,
+				2D4561341B6648B600A6591D /* craftygirls */,
+				2D4561351B6648B600A6591D /* creepstercaps */,
+				2D4561361B6648B600A6591D /* crushed */,
+				2D4561371B6648B600A6591D /* droidarabickufi */,
+				2D4561381B6648B600A6591D /* droidarabicnaskh */,
+				2D4561391B6648B600A6591D /* droidsans */,
+				2D45613A1B6648B600A6591D /* droidsansethiopic */,
+				2D45613B1B6648B600A6591D /* droidsansjapanese */,
+				2D45613C1B6648B600A6591D /* droidsansmono */,
+				2D45613D1B6648B600A6591D /* droidsanstamil */,
+				2D45613E1B6648B600A6591D /* droidsansthai */,
+				2D45613F1B6648B600A6591D /* droidserif */,
+				2D4561401B6648B600A6591D /* droidserifthai */,
+				2D4561411B6648B600A6591D /* fontdinerswanky */,
+				2D4561421B6648B600A6591D /* homemadeapple */,
+				2D4561431B6648B600A6591D /* irishgrover */,
+				2D4561441B6648B600A6591D /* irishgrowler */,
+				2D4561451B6648B600A6591D /* jsmathcmbx10 */,
+				2D4561461B6648B600A6591D /* jsmathcmex10 */,
+				2D4561471B6648B600A6591D /* jsmathcmmi10 */,
+				2D4561481B6648B600A6591D /* jsmathcmr10 */,
+				2D4561491B6648B600A6591D /* jsmathcmsy10 */,
+				2D45614A1B6648B600A6591D /* jsmathcmti10 */,
+				2D45614B1B6648B600A6591D /* justanotherhand */,
+				2D45614C1B6648B600A6591D /* kranky */,
+				2D45614D1B6648B600A6591D /* luckiestguy */,
+				2D45614E1B6648B600A6591D /* maidenorange */,
+				2D45614F1B6648B600A6591D /* montez */,
+				2D4561501B6648B600A6591D /* mountainsofchristmas */,
+				2D4561511B6648B600A6591D /* nokora */,
+				2D4561521B6648B600A6591D /* notokufiarabic */,
+				2D4561531B6648B600A6591D /* notonaskharabic */,
+				2D4561541B6648B600A6591D /* notonastaliqurdudraft */,
+				2D4561551B6648B600A6591D /* notosans */,
+				2D4561561B6648B600A6591D /* notosansarmenian */,
+				2D4561571B6648B600A6591D /* notosansavestan */,
+				2D4561581B6648B600A6591D /* notosansbengali */,
+				2D4561591B6648B600A6591D /* notosansbrahmi */,
+				2D45615A1B6648B600A6591D /* notosanscarian */,
+				2D45615B1B6648B600A6591D /* notosanscham */,
+				2D45615C1B6648B600A6591D /* notosanscherokee */,
+				2D45615D1B6648B600A6591D /* notosanscoptic */,
+				2D45615E1B6648B600A6591D /* notosanscypriotsyllabary */,
+				2D45615F1B6648B600A6591D /* notosansdeseret */,
+				2D4561601B6648B600A6591D /* notosansdevanagari */,
+				2D4561611B6648B600A6591D /* notosansdevanagariui */,
+				2D4561621B6648B600A6591D /* notosansegyptianhieroglyphs */,
+				2D4561631B6648B600A6591D /* notosansethiopic */,
+				2D4561641B6648B600A6591D /* notosansgeorgian */,
+				2D4561651B6648B600A6591D /* notosansglagolitic */,
+				2D4561661B6648B600A6591D /* notosansgujarati */,
+				2D4561671B6648B600A6591D /* notosansgujaratiui */,
+				2D4561681B6648B600A6591D /* notosansgurmukhi */,
+				2D4561691B6648B600A6591D /* notosanshanunoo */,
+				2D45616A1B6648B600A6591D /* notosanshebrew */,
+				2D45616B1B6648B600A6591D /* notosansimperilaramaic */,
+				2D45616C1B6648B600A6591D /* notosanskaithi */,
+				2D45616D1B6648B600A6591D /* notosanskannada */,
+				2D45616E1B6648B600A6591D /* notosanskayahli */,
+				2D45616F1B6648B600A6591D /* notosanskharoshthi */,
+				2D4561701B6648B600A6591D /* notosanskhmer */,
+				2D4561711B6648B600A6591D /* notosanskufiarabic */,
+				2D4561721B6648B600A6591D /* notosanslao */,
+				2D4561731B6648B600A6591D /* notosanslaoui */,
+				2D4561741B6648B600A6591D /* notosanslisu */,
+				2D4561751B6648B600A6591D /* notosanslycian */,
+				2D4561761B6648B600A6591D /* notosanslydian */,
+				2D4561771B6648B600A6591D /* notosansmalayalam */,
+				2D4561781B6648B600A6591D /* notosansmandaic */,
+				2D4561791B6648B600A6591D /* notosansmeeteimayek */,
+				2D45617A1B6648B600A6591D /* notosansmyanmar */,
+				2D45617B1B6648B600A6591D /* notosansnko */,
+				2D45617C1B6648B600A6591D /* notosansoldsoutharabian */,
+				2D45617D1B6648B600A6591D /* notosansoldturkic */,
+				2D45617E1B6648B600A6591D /* notosansosmanya */,
+				2D45617F1B6648B600A6591D /* notosansphoenician */,
+				2D4561801B6648B600A6591D /* notosansshavian */,
+				2D4561811B6648B600A6591D /* notosanssinhala */,
+				2D4561821B6648B600A6591D /* notosanssymbols */,
+				2D4561831B6648B600A6591D /* notosanstagalog */,
+				2D4561841B6648B600A6591D /* notosanstaitham */,
+				2D4561851B6648B600A6591D /* notosanstaiviet */,
+				2D4561861B6648B600A6591D /* notosanstamil */,
+				2D4561871B6648B600A6591D /* notosanstamilui */,
+				2D4561881B6648B600A6591D /* notosanstelugu */,
+				2D4561891B6648B600A6591D /* notosansthai */,
+				2D45618A1B6648B600A6591D /* notosansthaiui */,
+				2D45618B1B6648B600A6591D /* notosansugaritic */,
+				2D45618C1B6648B600A6591D /* notosansui */,
+				2D45618D1B6648B600A6591D /* notosansvai */,
+				2D45618E1B6648B600A6591D /* notoserif */,
+				2D45618F1B6648B600A6591D /* notoserifarmenian */,
+				2D4561901B6648B600A6591D /* notoserifgeorgian */,
+				2D4561911B6648B600A6591D /* notoserifkhmer */,
+				2D4561921B6648B600A6591D /* notoseriflao */,
+				2D4561931B6648B600A6591D /* notoserifthai */,
+				2D4561941B6648B600A6591D /* opensans */,
+				2D4561951B6648B600A6591D /* opensanscondensed */,
+				2D4561961B6648B600A6591D /* opensanshebrew */,
+				2D4561971B6648B600A6591D /* opensanshebrewcondensed */,
+				2D4561981B6648B600A6591D /* permanentmarker */,
+				2D4561991B6648B600A6591D /* rancho */,
+				2D45619A1B6648B600A6591D /* redressed */,
+				2D45619B1B6648B600A6591D /* roboto */,
+				2D45619C1B6648B600A6591D /* robotocondensed */,
+				2D45619D1B6648B600A6591D /* robotomono */,
+				2D45619E1B6648B600A6591D /* robotoslab */,
+				2D45619F1B6648B600A6591D /* rochester */,
+				2D4561A01B6648B600A6591D /* rocksalt */,
+				2D4561A11B6648B600A6591D /* satisfy */,
+				2D4561A21B6648B600A6591D /* schoolbell */,
+				2D4561A31B6648B600A6591D /* slackey */,
+				2D4561A41B6648B600A6591D /* smokum */,
+				2D4561A51B6648B600A6591D /* specialelite */,
+				2D4561A61B6648B600A6591D /* sunshiney */,
+				2D4561A71B6648B600A6591D /* syncopate */,
+				2D4561A81B6648B600A6591D /* tinos */,
+				2D4561A91B6648B600A6591D /* ultra */,
+				2D4561AA1B6648B600A6591D /* unkempt */,
+				2D4561AB1B6648B600A6591D /* walterturncoat */,
+				2D4561AC1B6648B600A6591D /* yellowtail */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 		824275A2CB8B36B2B182BB6C /* Pods */ = {
@@ -317,19 +709,147 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D4562211B6648B600A6591D /* satisfy in Resources */,
+				2D45622C1B6648B600A6591D /* yellowtail in Resources */,
+				2D4562131B6648B600A6591D /* notoserifthai in Resources */,
 				2D2AC0CB1B4D6DF30075106D /* logo_1.png in Resources */,
 				2D2AC0901B4D491F0075106D /* Main.storyboard in Resources */,
+				2D4562021B6648B600A6591D /* notosanssymbols in Resources */,
 				2D2AC0C41B4D4E590075106D /* ExportViewController.xib in Resources */,
+				2D4561B11B6648B600A6591D /* chewy in Resources */,
+				2D4562271B6648B600A6591D /* syncopate in Resources */,
+				2D4562181B6648B600A6591D /* permanentmarker in Resources */,
+				2D4562091B6648B600A6591D /* notosansthai in Resources */,
+				2D4561AF1B6648B600A6591D /* calligraffitti in Resources */,
+				2D4561F81B6648B600A6591D /* notosansmandaic in Resources */,
+				2D4561F21B6648B600A6591D /* notosanslao in Resources */,
+				2D4561C41B6648B600A6591D /* irishgrowler in Resources */,
+				2D45621E1B6648B600A6591D /* robotoslab in Resources */,
+				2D45620C1B6648B600A6591D /* notosansui in Resources */,
+				2D4561E81B6648B600A6591D /* notosansgurmukhi in Resources */,
+				2D4561E31B6648B600A6591D /* notosansethiopic in Resources */,
+				2D4562011B6648B600A6591D /* notosanssinhala in Resources */,
+				2D4561C11B6648B600A6591D /* fontdinerswanky in Resources */,
 				2D2AC0CF1B4D6DF30075106D /* logo_5.png in Resources */,
+				2D4561FB1B6648B600A6591D /* notosansnko in Resources */,
+				2D4561C91B6648B600A6591D /* jsmathcmsy10 in Resources */,
+				2D45620D1B6648B600A6591D /* notosansvai in Resources */,
+				2D4562141B6648B600A6591D /* opensans in Resources */,
+				2D4562251B6648B600A6591D /* specialelite in Resources */,
+				2D4562221B6648B600A6591D /* schoolbell in Resources */,
+				2D4561B61B6648B600A6591D /* crushed in Resources */,
+				2D4562171B6648B600A6591D /* opensanshebrewcondensed in Resources */,
+				2D4561C21B6648B600A6591D /* homemadeapple in Resources */,
+				2D45620F1B6648B600A6591D /* notoserifarmenian in Resources */,
+				2D4561C61B6648B600A6591D /* jsmathcmex10 in Resources */,
+				2D4562151B6648B600A6591D /* opensanscondensed in Resources */,
 				2D2AC0951B4D491F0075106D /* LaunchScreen.xib in Resources */,
+				2D45622A1B6648B600A6591D /* unkempt in Resources */,
+				2D4562111B6648B600A6591D /* notoserifkhmer in Resources */,
+				2D4561F31B6648B600A6591D /* notosanslaoui in Resources */,
+				2D4561CE1B6648B600A6591D /* maidenorange in Resources */,
+				2D4561D31B6648B600A6591D /* notonaskharabic in Resources */,
 				2D2AC0921B4D491F0075106D /* Images.xcassets in Resources */,
+				2D4561E91B6648B600A6591D /* notosanshanunoo in Resources */,
+				2D4562081B6648B600A6591D /* notosanstelugu in Resources */,
+				2D4561B01B6648B600A6591D /* cherrycreamsoda in Resources */,
+				2D4561B31B6648B600A6591D /* cousine in Resources */,
+				2D4561DB1B6648B600A6591D /* notosanscham in Resources */,
+				2D4561DE1B6648B600A6591D /* notosanscypriotsyllabary in Resources */,
+				2D4562291B6648B600A6591D /* ultra in Resources */,
 				2D2AC0BF1B4D4E4C0075106D /* PreviewViewController.xib in Resources */,
+				2D4561F11B6648B600A6591D /* notosanskufiarabic in Resources */,
+				2D4561FA1B6648B600A6591D /* notosansmyanmar in Resources */,
+				2D4561C81B6648B600A6591D /* jsmathcmr10 in Resources */,
+				2D45621C1B6648B600A6591D /* robotocondensed in Resources */,
+				2D4561CF1B6648B600A6591D /* montez in Resources */,
+				2D4561E51B6648B600A6591D /* notosansglagolitic in Resources */,
+				2D4561EC1B6648B600A6591D /* notosanskaithi in Resources */,
+				2D4561BE1B6648B600A6591D /* droidsansthai in Resources */,
+				2D4561C31B6648B600A6591D /* irishgrover in Resources */,
+				2D4562281B6648B600A6591D /* tinos in Resources */,
+				2D4561E41B6648B600A6591D /* notosansgeorgian in Resources */,
+				2D45620B1B6648B600A6591D /* notosansugaritic in Resources */,
+				2D4561CC1B6648B600A6591D /* kranky in Resources */,
+				2D4562121B6648B600A6591D /* notoseriflao in Resources */,
+				2D4561C71B6648B600A6591D /* jsmathcmmi10 in Resources */,
+				2D4561B91B6648B600A6591D /* droidsans in Resources */,
+				2D45621B1B6648B600A6591D /* roboto in Resources */,
+				2D4561F01B6648B600A6591D /* notosanskhmer in Resources */,
+				2D4561B41B6648B600A6591D /* craftygirls in Resources */,
 				2D2AC0B81B4D4D550075106D /* DesignViewController.xib in Resources */,
+				2D4561ED1B6648B600A6591D /* notosanskannada in Resources */,
+				2D4561CA1B6648B600A6591D /* jsmathcmti10 in Resources */,
+				2D4561D51B6648B600A6591D /* notosans in Resources */,
+				2D4561BC1B6648B600A6591D /* droidsansmono in Resources */,
+				2D45621D1B6648B600A6591D /* robotomono in Resources */,
+				2D45620E1B6648B600A6591D /* notoserif in Resources */,
+				2D4561FC1B6648B600A6591D /* notosansoldsoutharabian in Resources */,
+				2D4561FE1B6648B600A6591D /* notosansosmanya in Resources */,
+				2D4561B81B6648B600A6591D /* droidarabicnaskh in Resources */,
+				2D4562261B6648B600A6591D /* sunshiney in Resources */,
+				2D4561F71B6648B600A6591D /* notosansmalayalam in Resources */,
+				2D4561E21B6648B600A6591D /* notosansegyptianhieroglyphs in Resources */,
+				2D4561EE1B6648B600A6591D /* notosanskayahli in Resources */,
+				2D4562231B6648B600A6591D /* slackey in Resources */,
+				2D4562041B6648B600A6591D /* notosanstaitham in Resources */,
+				2D4562031B6648B600A6591D /* notosanstagalog in Resources */,
+				2D4561B21B6648B600A6591D /* comingsoon in Resources */,
+				2D4561FD1B6648B600A6591D /* notosansoldturkic in Resources */,
+				2D4561BD1B6648B600A6591D /* droidsanstamil in Resources */,
+				2D4561CB1B6648B600A6591D /* justanotherhand in Resources */,
+				2D4561E61B6648B600A6591D /* notosansgujarati in Resources */,
+				2D4561C51B6648B600A6591D /* jsmathcmbx10 in Resources */,
+				2D4561D91B6648B600A6591D /* notosansbrahmi in Resources */,
+				2D4561F41B6648B600A6591D /* notosanslisu in Resources */,
+				2D4561D21B6648B600A6591D /* notokufiarabic in Resources */,
+				2D4561D41B6648B600A6591D /* notonastaliqurdudraft in Resources */,
+				2D4561E11B6648B600A6591D /* notosansdevanagariui in Resources */,
+				2D4562051B6648B600A6591D /* notosanstaiviet in Resources */,
+				2D4561D71B6648B600A6591D /* notosansavestan in Resources */,
+				2D45622B1B6648B600A6591D /* walterturncoat in Resources */,
+				2D45621F1B6648B600A6591D /* rochester in Resources */,
+				2D4561EA1B6648B600A6591D /* notosanshebrew in Resources */,
+				2D4562161B6648B600A6591D /* opensanshebrew in Resources */,
 				2D2AC0CD1B4D6DF30075106D /* logo_3.png in Resources */,
+				2D4561BF1B6648B600A6591D /* droidserif in Resources */,
+				2D4562061B6648B600A6591D /* notosanstamil in Resources */,
+				2D4561C01B6648B600A6591D /* droidserifthai in Resources */,
+				2D4562201B6648B600A6591D /* rocksalt in Resources */,
+				2D4561FF1B6648B600A6591D /* notosansphoenician in Resources */,
+				2D4561AE1B6648B600A6591D /* arimo in Resources */,
 				2D2AC0CE1B4D6DF30075106D /* logo_4.png in Resources */,
+				2D4561B71B6648B600A6591D /* droidarabickufi in Resources */,
+				2D4561F61B6648B600A6591D /* notosanslydian in Resources */,
+				2D4561EF1B6648B600A6591D /* notosanskharoshthi in Resources */,
+				2D4562071B6648B600A6591D /* notosanstamilui in Resources */,
+				2D4561E01B6648B600A6591D /* notosansdevanagari in Resources */,
+				2D4561F91B6648B600A6591D /* notosansmeeteimayek in Resources */,
+				2D4561F51B6648B600A6591D /* notosanslycian in Resources */,
+				2D4561DF1B6648B600A6591D /* notosansdeseret in Resources */,
+				2D4562191B6648B600A6591D /* rancho in Resources */,
+				2D4561DD1B6648B600A6591D /* notosanscoptic in Resources */,
+				2D4561D11B6648B600A6591D /* nokora in Resources */,
+				2D4561CD1B6648B600A6591D /* luckiestguy in Resources */,
+				2D4561AD1B6648B600A6591D /* aclonica in Resources */,
+				2D4562001B6648B600A6591D /* notosansshavian in Resources */,
+				2D4561E71B6648B600A6591D /* notosansgujaratiui in Resources */,
 				2D2AC0CC1B4D6DF30075106D /* logo_2.png in Resources */,
+				2D4562101B6648B600A6591D /* notoserifgeorgian in Resources */,
+				2D4562241B6648B600A6591D /* smokum in Resources */,
+				2D4561DC1B6648B600A6591D /* notosanscherokee in Resources */,
+				2D4561D61B6648B600A6591D /* notosansarmenian in Resources */,
+				2D45621A1B6648B600A6591D /* redressed in Resources */,
+				2D4561D81B6648B600A6591D /* notosansbengali in Resources */,
+				2D4561B51B6648B600A6591D /* creepstercaps in Resources */,
+				2D4561DA1B6648B600A6591D /* notosanscarian in Resources */,
+				2D4561BA1B6648B600A6591D /* droidsansethiopic in Resources */,
+				2D4561EB1B6648B600A6591D /* notosansimperilaramaic in Resources */,
+				2D45620A1B6648B600A6591D /* notosansthaiui in Resources */,
 				2D2AC0B31B4D49B00075106D /* MainViewController.xib in Resources */,
 				2D2AC0D91B4EB1530075106D /* background_pattern.png in Resources */,
+				2D4561BB1B6648B600A6591D /* droidsansjapanese in Resources */,
+				2D4561D01B6648B600A6591D /* mountainsofchristmas in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

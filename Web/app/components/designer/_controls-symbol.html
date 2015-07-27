@@ -1,7 +1,11 @@
+
 <div class="col-sm-4">
-  <label for="fillcolorpicker">Fill color</label>
-	<input type="text" id='fillcolorpicker' ng-model="image.fillcolor" ng-change="changeFillColor()" />
+	<div class="form-group">
+	 	<label class="left gray" for="fillcolorpicker">Fill color</label>
+	 	<input type="text" id='fillcolorpicker' ng-model="image.fillcolor" ng-change="changeFillColor()" />
+	</div>
 </div>
+
 
 <script type="text/javascript">
 	$("#fillcolorpicker").spectrum({

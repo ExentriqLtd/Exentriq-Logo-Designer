@@ -8,7 +8,7 @@
 }
 
 .navbar-default {
-  background-color: #233347;
+  background-color: #2F4357;
   border: none;
   border-radius: 0;
 }
@@ -21,8 +21,50 @@
 .navbar-default .navbar-nav>li>a:hover {
   color: #ddd;
 }
+
+.navbar-default .navbar-brand {
+  color: #FFF;
+  line-height: 60px;
+  height: 60px;
+  line-height: inherit;
+}
+.navbar-default .navbar-brand:hover {
+  color: #fff;
+}
 /* ----------------------------------Buttons & Inputs---------------------------
  --------------------------------------------------------------------*/
+.form-group{
+  display: block;
+  margin: 10px auto 20px auto;
+}
+
+label{
+  text-align: center;
+  display: block;
+}
+
+label.gray{
+  color: #ccc;
+}
+
+input, input:focus{
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  outline: none;
+  width: 80%;
+}
+
+#companyName{
+  text-align: center;
+}
+
+#searchSymbol{
+  background: url("img/search.png");
+  padding-left: 25px;
+  background-repeat: no-repeat;
+  margin-top: 50px;
+}
 
 .btn-success {
   background-color: #1BBC9B;
@@ -35,14 +77,15 @@
   background-color: #1A9178 !important;
 }
 
-input{
-  background: transparent;
-  color: white;
-  border: 0;
-  border-bottom: 2px solid;
+select{
+  background: transparent !important;
+  border: none !important;
+  color: white !important;
+  width: 130px !important;
+  padding: 0 !important;
 }
 
-input:focus{
-  border: 10px;
-  border-bottom: 2px solid;
+select option{
+  background: #233447 !important;
 }
+

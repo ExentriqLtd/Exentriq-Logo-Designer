@@ -34,6 +34,15 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Arimo-Bold.ttf</string>
+		<string>Arimo-BoldItalic.ttf</string>
+		<string>Arimo-BoldItalic.ttf</string>
+		<string>Arimo-Regular.ttf</string>
+		<string>Calligraffitti-Regular.ttf</string>
+		<string>Calligraffitti-Regular.ttf</string>
+	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
