@@ -9,34 +9,28 @@ angular.module('myApp.designer', ['ngRoute'])
   });
 }])
 
-.controller('DesignerCtrl', ['$scope', 'Symbol',
-  function($scope, Symbol) {
+.controller('DesignerCtrl', ['$scope', 'Symbol', 'Font',
+  function($scope, Symbol, Font) {
 
     // ----------------------init canvas and its elements------------------------
     
     var canvas = new fabric.Canvas('c');
     canvas.setWidth($('.canvas-container').parent().width());
-    canvas.setHeight(500);
+    canvas.setHeight(450);
 
-    $scope.symbol = new Symboll(canvas);
-    $scope.text = new Text(canvas);
+    $scope.symbol = new SymbolElement(canvas);
+    $scope.text = new TextElement(canvas);
 
     $scope.symbols = Symbol.query(function(symbols){
       $scope.setLogoSymbol(symbols[0].svgPath);
     });
 
+
+    $scope.fonts = Font.query(function(fonts){
+      $scope.text.font = fonts[0];
+    });
+
     setCanvasListener(canvas, $scope);
-
-    // font select
-     $scope.text.fontfamilies = [
-                          { 'name': 'Open Sans', 'value': 'Open Sans'},
-                          { 'name': 'Roboto', 'value': 'Roboto'},
-                          { 'name': 'Lato', 'value': 'lato'},
-                          { 'name': 'Oswald', 'value': 'Oswald'},
-                          { 'name': 'Lora', 'value': 'Lora'}];
-
-      //Setting first option as selected in configuration select
-      $scope.text.fontfamily = $scope.text.fontfamilies[0].value;
 
     // ---------------------draw symbol in canvas-----------------------------
     $scope.setLogoSymbol = function(svgPath) {
@@ -71,6 +65,9 @@ angular.module('myApp.designer', ['ngRoute'])
       var textCanvas = $scope.text;
       var oldText = textCanvas.e;
       var text = new fabric.Text($scope.name, { left: textCanvas.left, top: textCanvas.top });
+      text.setFontFamily($scope.text.font.value);
+      text.setFontStyle($scope.text.font.style);
+      text.setFontWeight($scope.text.font.weight);
       textCanvas.e = text;
       $scope.refreshCanvasForText(oldText);
     };
@@ -96,7 +93,7 @@ angular.module('myApp.designer', ['ngRoute'])
       canvas.setActiveObject(activeObject);
     };
 
-    // Symbol properties change functions------------------------------------------
+    // Text properties change functions------------------------------------------
 
     $scope.changeTextColor = function(){
       var activeObject = canvas.getActiveObject();
@@ -105,9 +102,12 @@ angular.module('myApp.designer', ['ngRoute'])
       $scope.preview = canvas.toDataURL("image/png");
     };
 
-    $scope.changeTextFontFamily = function(){
+    $scope.changeTextFont = function(){
       var activeObject = canvas.getActiveObject();
-      activeObject.setFontFamily($scope.text.fontfamily);
+      if($scope.text.font != undefined)activeObject.setFontFamily($scope.text.font.value);
+      if($scope.text.font.style != undefined) activeObject.setFontStyle($scope.text.font.style);
+      if($scope.text.font.weight != undefined) activeObject.setFontWeight($scope.text.font.weight);
+
       canvas.renderAll();
     };
 

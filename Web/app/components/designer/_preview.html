@@ -1,8 +1,52 @@
-<div class="col-sm-3 col-sm-offset-1" id="card-background" >
-	<!--img ng-src="../../../assets/img/card_background.png" />-->
-	<img ng-src="{{preview}}" class="centered">
+<div class="col-xs-10 col-xs-offset-1">
+	<div class="responsive-slick">
+	  <div class="item">
+			<div class="back">
+				<img ng-src="assets/img/card_background.png"/>
+			</div>
+			<div class="front">
+				<img ng-src="{{preview}}" class="centered">
+			</div>
+	  </div>
+	  
+	  <div class="item">
+		  <div class="back">
+				<img ng-src="assets/img/shirt_background.png"/>
+			</div>
+			<div class="front">
+				<img ng-src="{{preview}}" class="centered">
+			</div>
+		</div>
+	  
+	  <div class="item">
+	  	<div class="back">
+				<img ng-src="assets/img/iphone_background.png"/>
+			</div>
+			<div class="front">
+				<img ng-src="{{preview}}" class="centered">
+			</div>
+		</div>
+
+		<div class="item">
+	  	<div class="back">
+				<img ng-src="assets/img/computer_background.png"/>
+			</div>
+			<div class="front">
+				<img ng-src="{{preview}}" class="centered">
+			</div>
+		</div>
+
+		
 </div>
 
-<div class="col-sm-3 col-sm-offset-3" id="shirt-background">
-	<img ng-src="{{preview}}" class="centered">
-</div>
+
+<script type="text/javascript">
+	
+	$('.responsive-slick').slick({
+  dots: false,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 2,
+  slidesToScroll: 2
+});
+</script>

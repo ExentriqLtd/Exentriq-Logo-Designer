@@ -1,8 +1,9 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
-@import url(http://fonts.googleapis.com/css?family=Roboto);
-@import url(http://fonts.googleapis.com/css?family=Lato);
-@import url(http://fonts.googleapis.com/css?family=Oswald);
-@import url(http://fonts.googleapis.com/css?family=Lora);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic);
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,700,300);
+@import url(http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic);
+@import url(http://fonts.googleapis.com/css?family=Shadows+Into+Light);
 
 /* app css stylesheet */
 .centered{
@@ -54,54 +55,6 @@
     background: url(img/background_designer.png) repeat;
 }
 
-#save{
-  background: #1BBC9B;
-  height: 80px;
-}
-#save div{
-  float: right;
-  background: url(img/right.png);
-  background-repeat: no-repeat;
-  background-position: 100% 50%;
-  padding-right: 40px;
-  padding-top: 10px;
-  margin-right: 80px;
-}
-#save p{
-  color: #EFEFEF;
-  font-size: 16px;
-  text-align: right;
-}
-#save a{
-  color: white;
-  font-size: 18px;
-  text-align: right;
-}
-
-
-#card-background{
-  width: 250px;
-  height: 150px;
-  background-image: url(img/card_background.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-#shirt-background{
-  width: 190px;
-  height: 245px;
-  background-image: url(img/shirt_background.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-#preview img{
-  width: 170px;
-}
-
-#shirt-background img{
-  margin-top: 30px;
-  padding: 0;
-}
-
 .controls{
   background: #233447;
   padding: 20px 50px;
@@ -110,3 +63,64 @@
   z-index: 10;
   width: 100%;
 }
+
+/* -------------------------------Preview-------------------------------------
+-------------------------------------------------------------------------------*/
+#preview{
+  background: #F0F0F0;
+  border-top: 3px solid #2F4357;
+}
+  .item{
+    position: relative;
+  }
+  #preview .back{
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+  }
+    #preview .back img{
+      width: 250px;
+    }
+
+  #preview .front{
+    height: 250px;
+    position: absolute;
+    top: 20%;
+    left: 18%;
+    }
+      #preview .front img{
+        height: 50%;
+        margin: 0 auto;
+      }
+  
+  .slick-prev:before, .slick-next:before {
+    color: #2F4357;
+  }
+
+/* -------------------------------Save / bottom bar-------------------------------------
+-------------------------------------------------------------------------------*/
+
+
+#save{
+  background: #1BBC9B;
+  height: 80px;
+}
+  #save div{
+    float: right;
+    background: url(img/right.png);
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    padding-right: 40px;
+    padding-top: 10px;
+    margin-right: 80px;
+  }
+    #save div p{
+      color: #EFEFEF;
+      font-size: 16px;
+      text-align: right;
+    }
+    #save div a{
+      color: white;
+      font-size: 18px;
+      text-align: right;
+    }

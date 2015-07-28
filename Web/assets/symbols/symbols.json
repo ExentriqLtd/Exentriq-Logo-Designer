@@ -1,0 +1,252 @@
+[
+  {
+      "tag": "arrow", 
+      "id": 1, 
+      "svgPath": "assets/symbols/images/arrow436.svg"
+  },
+  {
+      "tag": "blank", 
+      "id": 2, 
+      "svgPath": "assets/symbols/images/blank32.svg"
+  },
+  {
+      "tag": "chop", 
+      "id": 3, 
+      "svgPath": "assets/symbols/images/chop.svg"
+  },
+  {
+      "tag": "circle", 
+      "id": 4, 
+      "svgPath": "assets/symbols/images/circular132.svg"
+  },
+  {
+      "tag": "cube", 
+      "id": 5, 
+      "svgPath": "assets/symbols/images/cube8.svg"
+  },
+  {
+      "tag": "draw", 
+      "id": 6, 
+      "svgPath": "assets/symbols/images/draw24.svg"
+  },
+  {
+      "tag": "feather", 
+      "id": 7, 
+      "svgPath": "assets/symbols/images/feathers.svg"
+  },
+  {
+      "tag": "flake", 
+      "id": 8, 
+      "svgPath": "assets/symbols/images/flakes2.svg"
+  },
+  {
+      "tag": "heart", 
+      "id": 9, 
+      "svgPath": "assets/symbols/images/heart2.svg"
+  },
+  {
+      "tag": "achievement", 
+      "id": 10, 
+      "svgPath": "assets/symbols/images/achievement1.svg"
+  },
+  {
+      "tag": "agreement", 
+      "id": 11, 
+      "svgPath": "assets/symbols/images/agreement.svg"
+  },
+  {
+      "tag": "agreement", 
+      "id": 12, 
+      "svgPath": "assets/symbols/images/agreement1.svg"
+  },
+  {
+      "tag": "armchair", 
+      "id": 13, 
+      "svgPath": "assets/symbols/images/armchair4.svg"
+  },
+  {
+      "tag": "arrow", 
+      "id": 14, 
+      "svgPath": "assets/symbols/images/arrow637.svg"
+  },
+  {
+      "tag": "bank", 
+      "id": 15, 
+      "svgPath": "assets/symbols/images/banking2.svg"
+  },
+  {
+      "tag": "bell", 
+      "id": 16, 
+      "svgPath": "assets/symbols/images/agreement.svg"
+  },
+  {
+      "tag": "choice", 
+      "id": 17, 
+      "svgPath": "assets/symbols/images/best-choice.svg"
+  },
+  {
+      "tag": "boss", 
+      "id": 18, 
+      "svgPath": "assets/symbols/images/boss.svg"
+  },
+  {
+      "tag": "briefcase", 
+      "id": 19, 
+      "svgPath": "assets/symbols/images/briefcase3.svg"
+  },
+  {
+      "tag": "briefcase", 
+      "id": 20, 
+      "svgPath": "assets/symbols/images/briefcase69.svg"
+  },
+  {
+      "tag": "businessman", 
+      "id": 21, 
+      "svgPath": "assets/symbols/images/businessman276.svg"
+  },
+  {
+      "tag": "businessman", 
+      "id": 22, 
+      "svgPath": "assets/symbols/images/businessman277.svg"
+  },
+  {
+      "tag": "businessman", 
+      "id": 23, 
+      "svgPath": "assets/symbols/images/businessman278.svg"
+  },
+  {
+      "tag": "camera", 
+      "id": 24, 
+      "svgPath": "assets/symbols/images/camera119.svg"
+  },
+  {
+      "tag": "camera", 
+      "id": 25, 
+      "svgPath": "assets/symbols/images/camera120.svg"
+  },
+  {
+      "tag": "chart", 
+      "id": 26, 
+      "svgPath": "assets/symbols/images/chart.svg"
+  },
+  {
+      "tag": "chart", 
+      "id": 27, 
+      "svgPath": "assets/symbols/images/chart1.svg"
+  },
+  {
+      "tag": "chart", 
+      "id": 28, 
+      "svgPath": "assets/symbols/images/chart44.svg"
+  },
+  {
+      "tag": "chart", 
+      "id": 29, 
+      "svgPath": "assets/symbols/images/chart55.svg"
+  },
+  {
+      "tag": "chat", 
+      "id": 30, 
+      "svgPath": "assets/symbols/images/chat103.svg"
+  },
+  {
+      "tag": "chat", 
+      "id": 31, 
+      "svgPath": "assets/symbols/images/chat118.svg"
+  },
+  {
+      "tag": "checkbox", 
+      "id": 32, 
+      "svgPath": "assets/symbols/images/checkbox6.svg"
+  },
+  {
+      "tag": "chess",
+      "id": 33, 
+      "svgPath": "assets/symbols/images/chess-piece.svg"
+  },
+  {
+      "tag": "chronometer", 
+      "id": 34, 
+      "svgPath": "assets/symbols/images/chronometer.svg"
+  },
+  {
+      "tag": "clipboard", 
+      "id": 35, 
+      "svgPath": "assets/symbols/images/clipboard.svg"
+  },
+  {
+      "tag": "clock", 
+      "id": 36, 
+      "svgPath": "assets/symbols/images/clock136.svg"
+  },
+  {
+      "tag": "coffee", 
+      "id": 37, 
+      "svgPath": "assets/symbols/images/coffee128.svg"
+  },
+  {
+      "tag": "contract", 
+      "id": 38, 
+      "svgPath": "assets/symbols/images/contract11.svg"
+  },
+  {
+      "tag": "cross", 
+      "id": 39, 
+      "svgPath": "assets/symbols/images/cross102.svg"
+  },
+  {
+      "tag": "cross", 
+      "id": 40, 
+      "svgPath": "assets/symbols/images/cross103.svg"
+  },
+  {
+      "tag": "currency", 
+      "id": 41, 
+      "svgPath": "assets/symbols/images/currency-symbol.svg"
+  },
+  {
+      "tag": "data", 
+      "id": 42, 
+      "svgPath": "assets/symbols/images/data-analytics.svg"
+  },
+  {
+      "tag": "data", 
+      "id": 43, 
+      "svgPath": "assets/symbols/images/data-analytics1.svg"
+  },
+  {
+      "tag": "deadline", 
+      "id": 44, 
+      "svgPath": "assets/symbols/images/deadlines.svg"
+  },
+  {
+      "tag": "card", 
+      "id": 45, 
+      "svgPath": "assets/symbols/images/debit-card.svg"
+  },
+  {
+      "tag": "document", 
+      "id": 46, 
+      "svgPath": "assets/symbols/images/document6.svg"
+  },
+  {
+      "tag": "done", 
+      "id": 47, 
+      "svgPath": "assets/symbols/images/done2.svg"
+  },
+  {
+      "tag": "download", 
+      "id": 48, 
+      "svgPath": "assets/symbols/images/downloading.svg"
+  },
+  {
+      "tag": "drink", 
+      "id": 49, 
+      "svgPath": "assets/symbols/images/drink70.svg"
+  },
+  {
+      "tag": "exit", 
+      "id": 50, 
+      "svgPath": "assets/symbols/images/exit.svg"
+  }
+]

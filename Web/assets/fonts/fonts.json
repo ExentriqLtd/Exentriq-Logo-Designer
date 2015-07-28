@@ -1,0 +1,189 @@
+[  
+   {  
+   	"id": 1,
+      "name":"Open Sans",
+      "value":"Open Sans",
+      "styles":[
+      	{
+         "name": "Normal",
+         "value": "normal"
+        },
+      	{
+         "name": "Italic",
+         "value": "italic"
+        }
+      ],
+      "weights":[  
+         {  
+            "name":"Thin",
+            "value":100
+         },
+         {  
+            "name":"Light",
+            "value":300
+         },
+         {  
+            "name":"Normal",
+            "value":400
+         },
+         {  
+            "name":"Medium",
+            "value":500
+         },
+         {  
+            "name":"Bold",
+            "value":700
+         },
+         {  
+            "name":"Extra Bold",
+            "value":900
+         }
+      ]
+   },
+   {  
+   		"id": 2,
+      "name":"Roboto",
+      "value":"Roboto",
+      "styles":[
+      	{
+         "name": "Normal",
+         "value": "normal"
+        },
+        {
+         "name": "Italic",
+         "value": "italic"
+        }
+      ],
+      "weights":[  
+         {  
+            "name":"Thin",
+            "value":100
+         },
+         {  
+            "name":"Light",
+            "value":300
+         },
+         {  
+            "name":"Normal",
+            "value":400
+         },
+         {  
+            "name":"Medium",
+            "value":500
+         },
+         {  
+            "name":"Bold",
+            "value":700
+         },
+         {  
+            "name":"Extra Bold",
+            "value":900
+         }
+      ]
+   },
+   {  
+   	"id": 3,
+      "name":"Lato",
+      "value":"Lato",
+      "styles":[
+      	{
+         "name": "Normal",
+         "value": "normal"
+        },
+         {
+         	"name": "Italic",
+         	"value": "italic"
+         }
+      ],
+      "weights":[  
+         {  
+            "name":"Thin",
+            "value":100
+         },
+         {  
+            "name":"Light",
+            "value":300
+         },
+         {  
+            "name":"Normal",
+            "value":400
+         },
+         {  
+            "name":"Medium",
+            "value":500
+         },
+         {  
+            "name":"Bold",
+            "value":700
+         },
+         {  
+            "name":"Extra Bold",
+            "value":900
+         }
+      ]
+   },
+   {  
+   	"id": 4,
+      "name":"Oswald",
+      "value":"Open Sans",
+      "styles":[
+      	{
+         "name": "Normal",
+         "value": "normal"
+        }
+      ],
+      "weights":[
+         {  
+            "name":"Light",
+            "value":300
+         },
+         {  
+            "name":"Normal",
+            "value":400
+         },
+         {  
+            "name":"Bold",
+            "value":700
+         }
+      ]
+   },
+   {  
+   	"id": 5,
+      "name":"Lora",
+      "value":"Lora",
+      "styles":[  
+         {
+         "name": "Italic",
+         "value": "italic"
+        }
+      ],
+      "weights":[
+         {  
+            "name":"Normal",
+            "value":400
+         },
+         {  
+            "name":"Bold",
+            "value":700
+         }
+      ]
+   },
+   {  
+   		"id": 6,
+      "name":"Shadows Into Light",
+      "value":"Shadows Into Light",
+      "styles":[
+      	{
+         "name": "Normal",
+         "value": "normal"
+        }
+         
+      ],
+      "weights":[  
+         {  
+            "name":"Normal",
+            "value":400
+         }
+      ]
+   }
+]
