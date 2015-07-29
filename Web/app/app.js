@@ -5,8 +5,13 @@ angular.module('myApp', [
   'ngRoute',
   'myAppServices',
   'myApp.designer',
+  'myApp.mobile',
   'myApp.version'
 ]).
+
 config(['$routeProvider', function($routeProvider) {
-  $routeProvider.otherwise({redirectTo: '/designer'});
+	if($(document).width() > 480)
+  	$routeProvider.otherwise({redirectTo: '/designer'});
+ 	else
+ 		$routeProvider.otherwise({redirectTo: '/mobile'});
 }]);

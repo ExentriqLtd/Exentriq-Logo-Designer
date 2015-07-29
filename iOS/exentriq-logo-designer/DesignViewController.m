@@ -303,6 +303,9 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
                              dequeueReusableCellWithIdentifier:@"LogoCell"
                              forIndexPath:indexPath];
     if (cell) {
+        cell.textLabel.text = @"Hello";
+        cell.textLabel.font = [UIFont fontWithName:@"Aclonica" size:15];
+        /*
         NSString *prefix = @"logo_";
         [cell
          setImageViewForLogoImage:[UIImage imageNamed:[prefix
@@ -310,6 +313,7 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
                                                    [[NSNumber numberWithInteger:indexPath.row+1]
                                                     stringValue]]]];
         [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
+         */
     }
     
     

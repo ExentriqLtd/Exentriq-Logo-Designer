@@ -160,6 +160,7 @@
 		2D45622A1B6648B600A6591D /* unkempt in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561AA1B6648B600A6591D /* unkempt */; };
 		2D45622B1B6648B600A6591D /* walterturncoat in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561AB1B6648B600A6591D /* walterturncoat */; };
 		2D45622C1B6648B600A6591D /* yellowtail in Resources */ = {isa = PBXBuildFile; fileRef = 2D4561AC1B6648B600A6591D /* yellowtail */; };
+		2D45622E1B690BDF00A6591D /* Aclonica.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2D45622D1B690BDF00A6591D /* Aclonica.ttf */; };
 		950CD928611EFCF2165611F8 /* libPods-exentriq-logo-designer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C3FDDD8258B6361388C40586 /* libPods-exentriq-logo-designer.a */; };
 /* End PBXBuildFile section */
 
@@ -340,6 +341,7 @@
 		2D4561AA1B6648B600A6591D /* unkempt */ = {isa = PBXFileReference; lastKnownFileType = folder; path = unkempt; sourceTree = "<group>"; };
 		2D4561AB1B6648B600A6591D /* walterturncoat */ = {isa = PBXFileReference; lastKnownFileType = folder; path = walterturncoat; sourceTree = "<group>"; };
 		2D4561AC1B6648B600A6591D /* yellowtail */ = {isa = PBXFileReference; lastKnownFileType = folder; path = yellowtail; sourceTree = "<group>"; };
+		2D45622D1B690BDF00A6591D /* Aclonica.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Aclonica.ttf; path = aclonica/Aclonica.ttf; sourceTree = "<group>"; };
 		77219908306B42B0A05C7BE8 /* Pods-exentriq-logo-designer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-exentriq-logo-designer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-exentriq-logo-designer/Pods-exentriq-logo-designer.debug.xcconfig"; sourceTree = "<group>"; };
 		7E7DDBA3FB6239483561DB86 /* Pods-exentriq-logo-designer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-exentriq-logo-designer.release.xcconfig"; path = "Pods/Target Support Files/Pods-exentriq-logo-designer/Pods-exentriq-logo-designer.release.xcconfig"; sourceTree = "<group>"; };
 		C3FDDD8258B6361388C40586 /* libPods-exentriq-logo-designer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-exentriq-logo-designer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -478,6 +480,7 @@
 		2D45612C1B663E5600A6591D /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				2D45622D1B690BDF00A6591D /* Aclonica.ttf */,
 				2D45612D1B6648B600A6591D /* aclonica */,
 				2D45612E1B6648B600A6591D /* arimo */,
 				2D45612F1B6648B600A6591D /* calligraffitti */,
@@ -809,6 +812,7 @@
 				2D4561D71B6648B600A6591D /* notosansavestan in Resources */,
 				2D45622B1B6648B600A6591D /* walterturncoat in Resources */,
 				2D45621F1B6648B600A6591D /* rochester in Resources */,
+				2D45622E1B690BDF00A6591D /* Aclonica.ttf in Resources */,
 				2D4561EA1B6648B600A6591D /* notosanshebrew in Resources */,
 				2D4562161B6648B600A6591D /* opensanshebrew in Resources */,
 				2D2AC0CD1B4D6DF30075106D /* logo_3.png in Resources */,

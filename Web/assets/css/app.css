@@ -19,6 +19,27 @@
 
 /* -------------------------------Sidebar-------------------------------------
 -------------------------------------------------------------------------------*/
+.mobile-container{
+  background:  -webkit-linear-gradient(rgba(255, 0, 0, 0.13), rgba(0, 6, 80, 0.19)),
+   url(img/mobile-background.jpg) center center no-repeat;
+  background:  -o-linear-gradient(rgba(255, 0, 0, 0.13), rgba(0, 6, 80, 0.19)),
+   url(img/mobile-background.jpg) center center no-repeat;
+  background:  linear-gradient(rgba(255, 0, 0, 0.13), rgba(0, 6, 80, 0.19)),
+   url(img/mobile-background.jpg) center center no-repeat;
+  background-size: cover;
+  color: white;
+  height: 90vh;
+  padding-top: 50px;
+}
+.download-icon{
+   width: 180px;
+  display: block;
+  margin-bottom: 150px;
+  margin: 50px auto 0 auto;
+}
+
+/* -------------------------------Sidebar-------------------------------------
+-------------------------------------------------------------------------------*/
 .sidebar{
   background: #FFF;
   min-height: 110vh;

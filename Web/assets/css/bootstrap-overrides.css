@@ -31,6 +31,15 @@
 .navbar-default .navbar-brand:hover {
   color: #fff;
 }
+
+.navbar-header-mobile{
+  text-align: center;
+  color: #fff;
+}
+.navbar-header-mobile img{
+  height: 20px;
+  margin-top: 5px;
+}
 /* ----------------------------------Buttons & Inputs---------------------------
  --------------------------------------------------------------------*/
 .form-group{
@@ -79,13 +88,25 @@ input, input:focus{
 
 select{
   background: transparent !important;
-  border: none !important;
+  border: 1px solid rgb(47, 67, 87) !important;
   color: white !important;
-  width: 130px !important;
+  width: 180px !important;
   padding: 0 !important;
+  -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+}
+
+select:focus{
+  border: 1px solid rgb(47, 67, 87) !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
 }
 
 select option{
   background: #233447 !important;
 }
 
+select option:hover{
+ color: #1B517E;
+}

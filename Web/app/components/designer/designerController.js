@@ -9,8 +9,12 @@ angular.module('myApp.designer', ['ngRoute'])
   });
 }])
 
-.controller('DesignerCtrl', ['$scope', 'Symbol', 'Font',
-  function($scope, Symbol, Font) {
+.controller('DesignerCtrl', ['$scope', '$location', 'Symbol', 'Font',
+  function($scope, $location, Symbol, Font) {
+
+    if($(document).width() < 480){
+      $location.url('/mobile');
+    }
 
     // ----------------------init canvas and its elements------------------------
     
@@ -28,6 +32,8 @@ angular.module('myApp.designer', ['ngRoute'])
 
     $scope.fonts = Font.query(function(fonts){
       $scope.text.font = fonts[0];
+      $scope.text.font.style = fonts[0].styles[0].value;
+      $scope.text.font.weight = fonts[0].weights[0].value;
     });
 
     setCanvasListener(canvas, $scope);
@@ -104,10 +110,12 @@ angular.module('myApp.designer', ['ngRoute'])
 
     $scope.changeTextFont = function(){
       var activeObject = canvas.getActiveObject();
-      if($scope.text.font != undefined)activeObject.setFontFamily($scope.text.font.value);
-      if($scope.text.font.style != undefined) activeObject.setFontStyle($scope.text.font.style);
-      if($scope.text.font.weight != undefined) activeObject.setFontWeight($scope.text.font.weight);
-
+      var font = $scope.text.font;
+      if(font != undefined)activeObject.setFontFamily(font.value);
+      if(font.style != undefined) activeObject.setFontStyle(font.style);
+      if(font.weight != undefined) activeObject.setFontWeight(font.weight);
+      font.style = font.styles[0].value;
+      font.weight = font.weights[0].value;
       canvas.renderAll();
     };
 
