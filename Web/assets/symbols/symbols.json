@@ -155,11 +155,6 @@
       "svgPath": "assets/symbols/images/chat118.svg"
   },
   {
-      "tag": "checkbox", 
-      "id": 32, 
-      "svgPath": "assets/symbols/images/checkbox6.svg"
-  },
-  {
       "tag": "chess",
       "id": 33, 
       "svgPath": "assets/symbols/images/chess-piece.svg"
@@ -188,11 +183,6 @@
       "tag": "contract", 
       "id": 38, 
       "svgPath": "assets/symbols/images/contract11.svg"
-  },
-  {
-      "tag": "cross", 
-      "id": 39, 
-      "svgPath": "assets/symbols/images/cross102.svg"
   },
   {
       "tag": "cross", 

@@ -1,3 +1,5 @@
+<a class="navbar-save" href="javascript:void(0)" ng-click="saveLogo()">Save and Print</a>
+
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-sm-12 col-lg-3 sidebar">
@@ -7,18 +9,20 @@
 			</header>
 
 			<div class="form-group">
-  			<label class="centered" for="companyName">Company name</label>
-				<input class="form-group" id="companyName" type="text" placeholder="Name" ng-model="name" ng-change="setLogoName()" class="centered">
+  			<label class="centered" for="companyName">Logo name</label>
+				<input class="form-group" id="companyName" type="text" placeholder="Name" ng-model="name" ng-change="setLogoName(name)" class="centered">
 			</div>
 
 			<div class="form-group">
-				<input id="searchSymbol" class="form-group" type="text" placeholder="Search symbols" ng-model="query" class="centered">
+				<input id="searchSymbol" class="form-group" type="text" placeholder="Search Icons" ng-model="query" class="centered">
 			</div>
 
 			<div class="row">
 				<ul class="symbols">
 	        <li ng-repeat="symbol in symbols | filter:query">
-		       <img ng-src="{{symbol.svgPath}}" ng-click="setLogoSymbol(symbol.svgPath)">
+	        	<div ng-click="setLogoSymbol(symbol.svgPath)">
+		       		<img class="svg" ng-src="{{symbol.svgPath}}" >
+		       	</div>
 	        </li>
 	      </ul>
 	    </div>
@@ -41,13 +45,6 @@
 
 			<div id="preview" class="row">
 				<ng-include src="'app/components/designer/_preview.html'" scope="preview"></ng-include>
-			</div>
-
-			<div id="save" class="row">
-				<div>
-					<p>Next</p>
-				 	<a href="javascript:void(0)" ng-click="saveLogo()">Save and Print</a>
-				 </div>
 			</div>
 		
 	</div>

@@ -1,8 +1,8 @@
 
-<div class="col-sm-4">
-	<div class="form-group">
-	 	<label class="left gray" for="fillcolorpicker">Fill color</label>
-	 	<input type="text" id='fillcolorpicker' ng-model="image.fillcolor" ng-change="changeFillColor()" />
+<div class="col-sm-4 col-sm-offset-4">
+	<div class="form-group ">
+	 	<label class="left" for="fillcolorpicker">Fill color</label>
+	 	<input class="form-control" type="text" id='fillcolorpicker' ng-model="image.fillcolor" ng-change="changeFillColor()" />
 	</div>
 </div>
 
@@ -10,14 +10,10 @@
 <script type="text/javascript">
 	$("#fillcolorpicker").spectrum({
   	color: "#000",
-  	preferredFormat: "rgb"
+  	preferredFormat: "hex",
+    showInput: true,
+    disabled: true
 	});
-
-	$("#bordercolorpicker").spectrum({
-  	color: "#000",
-  	preferredFormat: "rgb"
-	});
-	$('.controls').hide();
 
 
 </script>

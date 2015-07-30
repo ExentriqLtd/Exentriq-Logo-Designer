@@ -1,9 +1,9 @@
 function SymbolElement(canvas) {
   this.e = "";
   this.canvas = canvas;
-  this.scaleTo = canvas.height / 3;
-  this.left = canvas.width / 2.5;
-  this.top = canvas.height / 3;
+  this.scaleTo = canvas.height - 250;
+  this.left = canvas.width / 2 - 130;
+  this.top = canvas.height / 2 - 150;
   this.fillColor = "rgb(0,0,0)";
   this.bordercolor = "";
   this.borderwidth = "";
@@ -12,7 +12,8 @@ function SymbolElement(canvas) {
 function TextElement(canvas) {
   this.e = "";
   this.canvas = canvas;
-  this.left = canvas.width / 3;
+  this.content = "Company Name"
+  this.left = canvas.width / 2  - 195;
   this.top = canvas.height - 100;
   this.width = "";
   this.height = "";

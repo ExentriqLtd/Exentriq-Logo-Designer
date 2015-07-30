@@ -20,12 +20,7 @@
 /* -------------------------------Sidebar-------------------------------------
 -------------------------------------------------------------------------------*/
 .mobile-container{
-  background:  -webkit-linear-gradient(rgba(255, 0, 0, 0.13), rgba(0, 6, 80, 0.19)),
-   url(img/mobile-background.jpg) center center no-repeat;
-  background:  -o-linear-gradient(rgba(255, 0, 0, 0.13), rgba(0, 6, 80, 0.19)),
-   url(img/mobile-background.jpg) center center no-repeat;
-  background:  linear-gradient(rgba(255, 0, 0, 0.13), rgba(0, 6, 80, 0.19)),
-   url(img/mobile-background.jpg) center center no-repeat;
+  background:  linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 6, 80, 0.17)), url(img/mobile-background.jpg) center center no-repeat;
   background-size: cover;
   color: white;
   height: 90vh;
@@ -56,10 +51,11 @@
   display: inline-block;
   margin: 20px;
 }
-.sidebar li img{
+.sidebar li .svg{
   width: 30px;
-  height: 30px;
+  height: 30px; 
 }
+.svg path {fill: #747474 !important; width: 30px;}
 
 .symbols{
   height: 480px;
@@ -68,27 +64,53 @@
 }
 /* -------------------------------Main-------------------------------------
 -------------------------------------------------------------------------------*/
-.main{
-  height: 500px;
+.navbar-save{
+  position: fixed;
+  right: 0;
+  background: #1BBC9B;
+  color: white;
+  padding: 15px;
+  height: 60px;
+  line-height: 30px;
+  font-size: 18px;
+}
+
+.navbar-save:hover, .navbar-save:focus{
+  color: white;
 }
 
 #c{
-    background: url(img/background_designer.png) repeat;
+  background: url(img/background_designer.png) repeat;
 }
 
 .controls{
   background: #233447;
-  padding: 20px 50px;
   color: white;
-  position: absolute;
   z-index: 10;
   width: 100%;
+  height: 70px;
+  padding-top: 2px;
+  margin-bottom: 5px;
+  box-shadow: 0px 2px 4px -2px black;
+}
+.controls .form-group{
+  margin: 0;
+}
+.controls label{
+  color: rgb(198, 198, 198);
+}
+#controls-text{
+  display: none;
+}
+
+.controls .form-group{
+  text-align: center;
 }
 
 /* -------------------------------Preview-------------------------------------
 -------------------------------------------------------------------------------*/
 #preview{
-  background: #F0F0F0;
+  background: #9B9B9B;
   border-top: 3px solid #2F4357;
 }
   .item{
@@ -118,30 +140,37 @@
     color: #2F4357;
   }
 
-/* -------------------------------Save / bottom bar-------------------------------------
+/* -------------------------------Spectrum color picker overrides-------------------------------------
 -------------------------------------------------------------------------------*/
-
-
-#save{
-  background: #1BBC9B;
-  height: 80px;
+.sp-preview{
+  width: 65px;
+  height: 30px
 }
-  #save div{
-    float: right;
-    background: url(img/right.png);
-    background-repeat: no-repeat;
-    background-position: 100% 50%;
-    padding-right: 40px;
-    padding-top: 10px;
-    margin-right: 80px;
-  }
-    #save div p{
-      color: #EFEFEF;
-      font-size: 16px;
-      text-align: right;
-    }
-    #save div a{
-      color: white;
-      font-size: 18px;
-      text-align: right;
-    }
+.sp-dd {
+  padding: 7px 0;
+}
+.sp-replacer{
+  background: transparent;
+  border:none;
+  color: white;
+  float: left;
+}
+.sp-container{
+  border: none;
+    border-top: solid 2px #626262;
+
+}
+.sp-picker-container{
+  background: #233447;
+  border:none;
+}
+.sp-container button, .sp-container button:hover{
+  background: #1BBC9B;
+  color: white;
+}
+.sp-cancel, .sp-cancel:hover{
+  color:white !important;
+}
+.sp-input{
+  color: white;
+}
