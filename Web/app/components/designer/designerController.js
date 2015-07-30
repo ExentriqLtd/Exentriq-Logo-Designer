@@ -66,7 +66,9 @@ angular.module('myApp.designer', ['ngRoute'])
         $scope.symbol.e.paths[i].setFill($scope.symbol.fillColor);
       }
       canvas.add($scope.symbol.e);
-      $scope.preview = canvas.toDataURL("image/png");
+      $scope.$apply(function(){
+        $scope.preview = canvas.toDataURL("image/png");
+      });
     };
 
     // -------------------------draw text in canvas-------------------------------
@@ -99,7 +101,9 @@ angular.module('myApp.designer', ['ngRoute'])
       }
       symbolCanvas.fillColor = $('#fillcolorpicker').val();
       canvas.renderAll();
-      $scope.preview = canvas.toDataURL("image/png")
+      canvas.discardActiveObject();
+      $scope.preview = canvas.toDataURL("image/png");
+      canvas.setActiveObject(activeObject);
     };
 
     // Text properties change functions------------------------------------------
@@ -108,7 +112,9 @@ angular.module('myApp.designer', ['ngRoute'])
       var activeObject = canvas.getActiveObject();
       activeObject.setFill($('#textcolorpicker').val());
       canvas.renderAll();
+      canvas.discardActiveObject();
       $scope.preview = canvas.toDataURL("image/png");
+      canvas.setActiveObject(activeObject);
     };
 
     $scope.changeTextFontFamily = function(){

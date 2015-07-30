@@ -23,7 +23,7 @@
   background:  linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 6, 80, 0.17)), url(img/mobile-background.jpg) center center no-repeat;
   background-size: cover;
   color: white;
-  height: 90vh;
+  height: 92vh;
   padding-top: 50px;
 }
 .download-icon{
@@ -154,11 +154,11 @@
   border:none;
   color: white;
   float: left;
+  padding-left: 0;
 }
 .sp-container{
   border: none;
-    border-top: solid 2px #626262;
-
+  border-top: solid 2px #626262;
 }
 .sp-picker-container{
   background: #233447;
