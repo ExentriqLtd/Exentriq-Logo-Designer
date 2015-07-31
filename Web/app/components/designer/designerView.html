@@ -1,5 +1,3 @@
-<a class="navbar-save" href="javascript:void(0)" ng-click="saveLogo()">Save and Print</a>
-
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-sm-12 col-lg-3 sidebar">
@@ -30,12 +28,15 @@
 		</div>
 
 		<div class="col-sm-12 col-lg-9 main">
-			<div class="row">
-				<div id="controls-symbol" class="controls">
+			<div id="controls-container" class="row">
+				<div id="controls-symbol" class="controls col-lg-9">
 					<ng-include src="'app/components/designer/_controls-symbol.html'" scope="canvas"></ng-include>
 				</div>
-				<div id="controls-text" class="controls">
+				<div id="controls-text" class="controls col-lg-9">
 					<ng-include src="'app/components/designer/_controls-text.html'" scope="canvas"></ng-include>
+				</div>
+				<div class="col-lg-3">
+					<a class="save-button" href="javascript:void(0)" ng-click="saveLogo()">Save and Print</a>
 				</div>
 			</div>
 

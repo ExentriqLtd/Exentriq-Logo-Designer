@@ -64,34 +64,19 @@
 }
 /* -------------------------------Main-------------------------------------
 -------------------------------------------------------------------------------*/
-.navbar-save{
-  position: fixed;
-  right: 0;
-  background: #1BBC9B;
-  color: white;
-  padding: 15px;
-  height: 60px;
-  line-height: 30px;
-  font-size: 18px;
-}
-
-.navbar-save:hover, .navbar-save:focus{
-  color: white;
-}
-
 #c{
   background: url(img/background_designer.png) repeat;
 }
-
-.controls{
+#controls-container{
   background: #233447;
+    margin-bottom: 5px;
+  box-shadow: 0px 2px 4px -2px black;
+}
+.controls{
   color: white;
   z-index: 10;
-  width: 100%;
   height: 70px;
   padding-top: 2px;
-  margin-bottom: 5px;
-  box-shadow: 0px 2px 4px -2px black;
 }
 .controls .form-group{
   margin: 0;
@@ -105,6 +90,22 @@
 
 .controls .form-group{
   text-align: center;
+}
+
+.save-button{
+  background: #1BBC9B;
+  color: white;
+  padding: 15px;
+  height: 55px;
+  font-size: 18px;
+  margin-top: 10px;
+  border-radius: 5px;
+  float: right;
+  padding-top: 15px;
+}
+
+.save-button:hover, .save-button:focus{
+  color: white;
 }
 
 /* -------------------------------Preview-------------------------------------
