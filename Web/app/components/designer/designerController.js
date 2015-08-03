@@ -83,7 +83,7 @@ angular.module('myApp.designer', ['ngRoute'])
       $scope.name = content;
       var textCanvas = $scope.text;
       var oldText = textCanvas.e;
-      var text = new fabric.Text(content, { fontFamily: $scope.text.font.family, left: textCanvas.left, top: textCanvas.top, textAlign: "center" });
+      var text = new fabric.Text(content, { fontFamily: $scope.text.font.family, left: textCanvas.left, top: textCanvas.top, textAlign: "center", fontSize: 80 });
       textCanvas.e = text;
       textCanvas.content = content;
       $scope.refreshCanvasForText(oldText);
@@ -161,14 +161,10 @@ angular.module('myApp.designer', ['ngRoute'])
     $scope.refreshPreview = function() {
       $scope.$apply(function(){
         var activeObject = canvas.getActiveObject();
-        if(canvas.getActiveGroup()){
-          canvas.discardActiveGroup();
-          $scope.preview = canvas.toDataURL("image/png");
-        }
         if(canvas.getActiveObject()){
           canvas.discardActiveObject();
-         $scope.preview = canvas.toDataURL("image/png");
-        canvas.setActiveObject(activeObject);
+          $scope.preview = canvas.toDataURL("image/png");
+          canvas.setActiveObject(activeObject);
         } 
       });
     }
@@ -183,18 +179,30 @@ function setCanvasListener(canvas, $scope){
       var activeObject = e.target;
       var symbol = $scope.symbol;
       var text = $scope.text;
+      var outBounds = activeObject.top < 0 || activeObject.left < 0
+          || activeObject.left > canvas.width - (activeObject.width * activeObject.scaleX)
+          || activeObject.top > canvas.height - (activeObject.height * activeObject.scaleY);
+      var symbolX = $scope.symbol.left;
+      var symbolY = $scope.symbol.top;
+      var textX = $scope.text.left;
+      var textY = $scope.text.top;
+      var distance = Math.abs(textX - symbolX);
+      var scale = 1 - distance / 1000;
+
       if(activeObject.get('type') == 'path-group'){
         symbol.left = activeObject.get('left');
         symbol.top = activeObject.get('top');
-        $scope.refreshPreview();
+        if(!outBounds){
+          $scope.refreshPreview();
+          $('.front img').css('transform', 'scale('+ scale +')')
+        }
       }else if (activeObject.get('type') == 'text'){
         text.left = activeObject.get('left');
         text.top = activeObject.get('top');
-        $scope.refreshPreview();
-      }else{
-        $scope.$apply(function(){
-          $scope.preview = canvas.toDataURL("image/png");
-        });
+        if(!outBounds){
+          $scope.refreshPreview();
+          $('.front img').css('transform', 'scale('+ scale +')')
+        }
       }
     }
   });
@@ -222,11 +230,13 @@ function setCanvasListener(canvas, $scope){
    }
   });
 
-  canvas.on({'object:modified': function(e) {
+  canvas.on({'object:scaling': function(e) {
     var activeObject = e.target;
-    $scope.refreshPreview();
+    var outBounds = activeObject.top < 0 || activeObject.left < 0
+          || activeObject.left > canvas.width - (activeObject.width * activeObject.scaleX)
+          || activeObject.top > canvas.height - (activeObject.height * activeObject.scaleY);
+    if(!outBounds) $scope.refreshPreview();
     if(activeObject.get('type') == 'text'){
-
     }else if (activeObject.get('type') == 'path-group'){
       $scope.symbol.scaleTo = activeObject.width * activeObject.scaleX;
       $scope.symbol.left = activeObject.left;

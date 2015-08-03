@@ -157,16 +157,29 @@
     }
 
   #preview .front{
-    height: 250px;
+    width: 34%;
     position: absolute;
-    top: 20%;
-    left: 18%;
+    top: 80px;
+    padding-top: 20px;
+    left: 32%;
     }
-      #preview .front img{
-        height: 50%;
-        margin: 0 auto;
-      }
-  
+    #preview .front img{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+    #preview .front#shirt{
+      left: 35%;
+      top: 60px;
+      width: 30%;
+    }
+    #preview .front#mobile{
+      left: 37%;
+      top: 80px;
+      width: 30%;
+    }
+
   .slick-prev:before, .slick-next:before {
     color: #2F4357;
   }
@@ -175,7 +188,17 @@
 -------------------------------------------------------------------------------*/
 .sp-preview{
   width: 65px;
-  height: 30px
+  height: 30px;
+  background: url(img/color_bucket.png) no-repeat;
+  background-position: 50%;
+  border: none;
+}
+.sp-preview-inner{
+  top: 25px;
+  left: 10px;
+  bottom: 0;
+  right: 10px;
+  background-size: 17px;
 }
 .sp-dd {
   padding: 7px 0;
@@ -197,7 +220,8 @@
   border:none;
 }
 .sp-container button, .sp-container button:hover{
-  background: #1BBC9B;
+  background: transparent;
+  border: none;
   color: white;
 }
 .sp-cancel, .sp-cancel:hover{

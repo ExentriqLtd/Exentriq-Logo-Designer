@@ -13,7 +13,7 @@ function TextElement(canvas) {
   this.e = "";
   this.canvas = canvas;
   this.content = "Acme Inc."
-  this.left = canvas.width / 2  - 120;
+  this.left = canvas.width / 2  - 200;
   this.top = canvas.height - 100;
   this.width = "";
   this.height = "";
