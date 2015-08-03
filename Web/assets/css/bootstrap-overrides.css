@@ -46,13 +46,17 @@ label{
 /* ----------------------------------Buttons & Inputs---------------------------
  --------------------------------------------------------------------*/
 .form-group{
-  display: block;
-  margin: 10px auto 20px auto;
+  margin: 10px auto 0px 0px;
+  font-weight: 900;
 }
-
-label{
-  text-align: center;
-  display: block;
+.form-group::-webkit-input-placeholder {
+  font-weight: 300;
+}
+.form-group::-ms-input-placeholder {
+  font-weight: 300;
+}
+.form-group::-moz-placeholder {
+  font-weight: 300;
 }
 
 label.gray{
@@ -65,10 +69,6 @@ input, input:focus{
   padding-bottom: 10px;
   outline: none;
   width: 80%;
-}
-
-#companyName{
-  text-align: center;
 }
 
 #searchSymbol{
@@ -90,24 +90,23 @@ input, input:focus{
 }
 
 select{
-  background: transparent !important;
-  border: 1px solid rgb(47, 67, 87) !important;
-  color: white !important;
-  width: 180px !important;
+  border: none !important;
+  color: #000 !important;
   padding: 0 !important;
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
   -webkit-appearance: none;
    -moz-appearance: none;
    appearance: none;
+  background: url(img/arrow_down.png) no-repeat right white !important;
+  background-size: 8px !important;
+  min-width: 100px;
 }
 
 select:focus{
-  border: 1px solid rgb(47, 67, 87) !important;
+  border: none !important;
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
-}
-
-select option{
-  background: #233447 !important;
 }
 
 select option:hover{

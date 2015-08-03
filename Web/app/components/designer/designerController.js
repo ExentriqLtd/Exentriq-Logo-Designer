@@ -25,7 +25,6 @@ angular.module('myApp.designer', ['ngRoute'])
     $scope.symbol = new SymbolElement(canvas);
     $scope.text = new TextElement(canvas);
 
-
     setTimeout(function(){
       fillImage();
     }, 200);
@@ -36,8 +35,16 @@ angular.module('myApp.designer', ['ngRoute'])
 
     $scope.fonts = Font.query(function(fonts){
       $scope.text.font = fonts[0];
-      $scope.text.font.style = fonts[0].styles[0].value;
-      $scope.text.font.weight = fonts[0].weights[5].value;
+      $scope.text.font.variant = fonts[0].variants[0];
+      var families = [];
+      fonts.map(function(obj){ 
+        families.push(obj.family); 
+      });
+      WebFont.load({
+        google: {
+          families: families
+        }
+      });
       $scope.setLogoName($scope.text.content);
     });
 
@@ -76,13 +83,12 @@ angular.module('myApp.designer', ['ngRoute'])
       $scope.name = content;
       var textCanvas = $scope.text;
       var oldText = textCanvas.e;
-      var text = new fabric.Text(content, { left: textCanvas.left, top: textCanvas.top, textAlign: "center" });
-      text.setFontFamily($scope.text.font.value);
-      text.setFontStyle($scope.text.font.style);
-      text.setFontWeight($scope.text.font.weight);
+      var text = new fabric.Text(content, { fontFamily: $scope.text.font.family, left: textCanvas.left, top: textCanvas.top, textAlign: "center" });
       textCanvas.e = text;
       textCanvas.content = content;
       $scope.refreshCanvasForText(oldText);
+      //text.setFontVariant($scope.text.font.style);
+      
     };
 
     $scope.refreshCanvasForText = function(oldText){
@@ -114,35 +120,37 @@ angular.module('myApp.designer', ['ngRoute'])
       canvas.renderAll();
       canvas.discardActiveObject();
       $scope.preview = canvas.toDataURL("image/png");
+      canvas.discardActiveObject();
+      $scope.preview = canvas.toDataURL("image/png");
       canvas.setActiveObject(activeObject);
     };
 
     $scope.changeTextFontFamily = function(){
       var activeObject = canvas.getActiveObject();
       var font = $scope.text.font;
-      activeObject.setFontFamily(font.value);
-      setTimeout(function(){
-        canvas.renderAll();
-        $scope.refreshPreview();
-      }, 200);
-      $scope.text.font.style = font.styles[0].value;
-      $scope.text.font.weight = font.weights[0].value;
+      $scope.text.font.variant = font.variants[0];
+      activeObject.setFontFamily(font.family);
+      canvas.renderAll();
+      canvas.discardActiveObject();
+      $scope.preview = canvas.toDataURL("image/png");
+      canvas.setActiveObject(activeObject);
     };
 
-    $scope.changeTextFontStyle = function(){
+    $scope.changeTextFontVariant = function(){
       var activeObject = canvas.getActiveObject();
-      var font = $scope.text.font;
-      if(font.style != undefined) activeObject.setFontStyle(font.style);
+      var style = $scope.text.font.variant.replace(/[^a-zA-Z]+/g, '');
+      var weight = $scope.text.font.variant.replace(/[^0-9]+/g, '');
+      if(weight != "" && weight!= " ") activeObject.setFontWeight(weight);
+      if(style == "italic") activeObject.setFontStyle(style);
+      if(style == "regular"){
+        activeObject.setFontStyle();
+        activeObject.setFontWeight();
+        activeObject.setFontFamily($scope.text.font.family);
+      }
       canvas.renderAll();
+      canvas.discardActiveObject();
       $scope.preview = canvas.toDataURL("image/png");
-    };
-
-    $scope.changeTextFontWeight = function(){
-      var activeObject = canvas.getActiveObject();
-      var font = $scope.text.font;
-      if(font.weight != undefined) activeObject.setFontWeight(font.weight);
-      canvas.renderAll();
-      $scope.preview = canvas.toDataURL("image/png");
+      canvas.setActiveObject(activeObject);
     };
 
     $scope.saveLogo = function () {
@@ -153,9 +161,15 @@ angular.module('myApp.designer', ['ngRoute'])
     $scope.refreshPreview = function() {
       $scope.$apply(function(){
         var activeObject = canvas.getActiveObject();
-        canvas.discardActiveObject();
-        $scope.preview = canvas.toDataURL("image/png");
+        if(canvas.getActiveGroup()){
+          canvas.discardActiveGroup();
+          $scope.preview = canvas.toDataURL("image/png");
+        }
+        if(canvas.getActiveObject()){
+          canvas.discardActiveObject();
+         $scope.preview = canvas.toDataURL("image/png");
         canvas.setActiveObject(activeObject);
+        } 
       });
     }
 
@@ -172,11 +186,16 @@ function setCanvasListener(canvas, $scope){
       if(activeObject.get('type') == 'path-group'){
         symbol.left = activeObject.get('left');
         symbol.top = activeObject.get('top');
+        $scope.refreshPreview();
       }else if (activeObject.get('type') == 'text'){
         text.left = activeObject.get('left');
         text.top = activeObject.get('top');
+        $scope.refreshPreview();
+      }else{
+        $scope.$apply(function(){
+          $scope.preview = canvas.toDataURL("image/png");
+        });
       }
-      $scope.refreshPreview();
     }
   });
 
@@ -205,10 +224,10 @@ function setCanvasListener(canvas, $scope){
 
   canvas.on({'object:modified': function(e) {
     var activeObject = e.target;
+    $scope.refreshPreview();
     if(activeObject.get('type') == 'text'){
-       $scope.refreshPreview();
+
     }else if (activeObject.get('type') == 'path-group'){
-      $scope.refreshPreview();
       $scope.symbol.scaleTo = activeObject.width * activeObject.scaleX;
       $scope.symbol.left = activeObject.left;
       $scope.symbol.top = activeObject.top;

@@ -17,6 +17,22 @@
   text-align: left;
 }
 
+/* -------------------------------Navbar-------------------------------------
+-------------------------------------------------------------------------------*/
+.navbar{
+  box-shadow: 2px 1px 2px 0px rgba(0, 0, 0, 0.52);
+}
+
+.pricing a{
+  color: #1C9C7D !important;
+}
+.contact{
+  background: #9B9B9B;
+}
+.contact a{
+  font-size: 20px;
+}
+
 /* -------------------------------Sidebar-------------------------------------
 -------------------------------------------------------------------------------*/
 .mobile-container{
@@ -37,8 +53,9 @@
 -------------------------------------------------------------------------------*/
 .sidebar{
   background: #FFF;
-  min-height: 110vh;
-  margin-top: -60px;
+  min-height: 125vh;
+  padding-left: 20px;
+  box-shadow: 2px 1px 2px 0px rgba(0, 0, 0, 0.52);
 }
 .sidebar header{
   padding-top: 20px;
@@ -52,8 +69,8 @@
   margin: 20px;
 }
 .sidebar li .svg{
-  width: 30px;
-  height: 30px; 
+  width: 28px;
+  height: 28px; 
 }
 .svg path {fill: #747474 !important; width: 30px;}
 
@@ -64,23 +81,24 @@
 }
 /* -------------------------------Main-------------------------------------
 -------------------------------------------------------------------------------*/
+.with-margin{
+  margin-left: 1px;
+  padding-top: 4px;
+}
 #c{
   background: url(img/background_designer.png) repeat;
 }
-#controls-container{
-  background: #233447;
-    margin-bottom: 5px;
-  box-shadow: 0px 2px 4px -2px black;
-}
-.controls{
-  color: white;
-  z-index: 10;
-  height: 70px;
+
+.controls-container{
+  background: #FAFAFA;
   padding-top: 2px;
 }
+
 .controls .form-group{
   margin: 0;
+  text-align: center;
 }
+
 .controls label{
   color: rgb(198, 198, 198);
 }
@@ -88,31 +106,43 @@
   display: none;
 }
 
-.controls .form-group{
-  text-align: center;
+.controls ul li{
+  vertical-align: bottom;
+  border-right: 1px solid #EAEAEA;
+}
+
+.form-control{
+  cursor: pointer;
 }
 
 .save-button{
   background: #1BBC9B;
   color: white;
-  padding: 15px;
-  height: 55px;
-  font-size: 18px;
+  padding: 10px 10px;
+  height: 40px;
+  font-size: 14px;
+  font-weight: 800;
   margin-top: 10px;
   border-radius: 5px;
   float: right;
-  padding-top: 15px;
+  text-transform: uppercase;
+  box-shadow: 2px 1px 5px 0px rgba(0, 0, 0, 0.37);
+  outline: none !important;
 }
 
 .save-button:hover, .save-button:focus{
   color: white;
 }
 
+.modal iframe{
+  width: 100%;
+  height: 755px;
+}
+
 /* -------------------------------Preview-------------------------------------
 -------------------------------------------------------------------------------*/
 #preview{
-  background: #9B9B9B;
-  border-top: 3px solid #2F4357;
+  background: #F6F6F6;
 }
   .item{
     position: relative;
@@ -149,6 +179,7 @@
 }
 .sp-dd {
   padding: 7px 0;
+  color: #BFBFBF;
 }
 .sp-replacer{
   background: transparent;

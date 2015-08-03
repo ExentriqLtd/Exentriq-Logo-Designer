@@ -1,36 +1,22 @@
-<div class="col-sm-3">
-	<div class="form-group">
-	  <label class="left" for="textcolorpicker">Text color</label>
-		<input class="form-control" type="text" id='textcolorpicker' ng-model="text.color" ng-change="changeTextColor()" />
-	</div>
-</div>
+<ul class="list-inline">
+	<li>
+		<div class="form-group">
+			<input class="form-control" type="text" id='textcolorpicker' ng-model="text.color" ng-change="changeTextColor()" />
+		</div>
+	</li>
 
-<div class="col-sm-3">
-	<div class="form-group">
-	  <label class="left" for="textfontselect">Font family</label>
-
-	   <select class="form-control" id="textfontselect" ng-model="text.font" ng-options="font.name for font in fonts" ng-change="changeTextFontFamily()"></select>
-
+	<li>
+		<div class="form-group row">
+	   <select class="form-control left" id="textfontselect" ng-model="text.font" ng-options="font.family for font in fonts" ng-change="changeTextFontFamily()"></select>
 	 </div>
- </div>
+	</li>
 
-<div class="col-sm-3">
-	<div class="form-group">
-	  <label class="left" for="textfontselect">Font style</label>
-	   <select class="form-control" id="textfontselect" ng-model="text.font.style" ng-options="style.value as style.name for style in text.font.styles" ng-change="changeTextFontStyle()"></select>
-
+	<li>
+		<div class="form-group">
+	   <select class="form-control" id="textfontvariantselect" ng-model="text.font.variant" ng-options="variant as variant for variant in text.font.variants" ng-change="changeTextFontVariant()"></select>
 	 </div>
- </div>
-
- <div class="col-sm-3">
-	<div class="form-group">
-	  <label class="left" for="textfontselect">Font weight</label>
-    <select class="form-control" id="textfontselect" ng-model="text.font.weight" ng-options="weight.value as weight.name for weight in text.font.weights" ng-change="changeTextFontWeight()"></select>
-
-	 </div>
- </div>
-
-
+	</li>
+</ul>
 
 <script type="text/javascript">
 
