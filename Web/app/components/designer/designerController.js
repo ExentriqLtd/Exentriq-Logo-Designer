@@ -33,6 +33,7 @@ angular.module('myApp.designer', ['ngRoute'])
       $scope.setLogoSymbol(symbols[0].svgPath);
     });
 
+
     $scope.fonts = Font.query(function(fonts){
       $scope.text.font = fonts[0];
       $scope.text.font.variant = fonts[0].variants[0];

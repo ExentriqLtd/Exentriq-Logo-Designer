@@ -4,10 +4,9 @@
 
 var myAppServices = angular.module('myAppServices', ['ngResource']);
 
+var WEBFONT_KEY = "AIzaSyCPPgxBAlE1i5wSs_UCiHdSzTRbUnFgahE";
 var KEY = "93a381c670834a0897841762c1bb270a";
-var SECRET = "d572f804da92417fb94dbac0097f0cac";
-
-var WEBFONT_KEY = "AIzaSyCPPgxBAlE1i5wSs_UCiHdSzTRbUnFgahE"
+var SECRET = "9b473e68da594b21a19a93e9a771c2ae";
 
 myAppServices.factory('Symbol', ['$resource',
   function($resource){
@@ -28,3 +27,5 @@ myAppServices.factory('Font', ['$resource',
         }}
     });
   }]);
+
+

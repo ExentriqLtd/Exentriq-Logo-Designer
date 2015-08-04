@@ -53,7 +53,7 @@
 -------------------------------------------------------------------------------*/
 .sidebar{
   background: #FFF;
-  min-height: 125vh;
+  min-height: 600px;
   padding-left: 20px;
   box-shadow: 2px 1px 2px 0px rgba(0, 0, 0, 0.52);
 }
@@ -116,18 +116,19 @@
 }
 
 .save-button{
-  background: #1BBC9B;
+    background: #1BBC9B;
   color: white;
   padding: 10px 10px;
-  height: 40px;
+  vertical-align: middle;
   font-size: 14px;
   font-weight: 800;
-  margin-top: 1vh;
   border-radius: 5px;
-  float: right;
+  position: absolute;
   text-transform: uppercase;
   box-shadow: 2px 1px 5px 0px rgba(0, 0, 0, 0.37);
   outline: none !important;
+  top: 3px;
+  right: 5px;
 }
 
 .save-button:hover, .save-button:focus{
